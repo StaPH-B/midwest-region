@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 add a new pipeline
 
 testing
+=======
+Change 123445
+>>>>>>> 50c0b1aa3f6976f709874e6bda9f32f9e948bbe7
