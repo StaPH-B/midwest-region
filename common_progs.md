@@ -1,13 +1,15 @@
 ---
 layout: default
 ---
-## Common bioinformatics software:
+## Common Bioinformatics Software:
+
+* [StaPH-B](https://github.com/StaPH-B) – State public health bioinformaticians workgroup
 
 * [Abricate](https://github.com/tseemann/abricate) – program that screens the assembled contigs for virulence genes and acquired resistance genes
 
 * [Lyve – SET](https://github.com/lskatz/lyve-SET) – (SET: Snp Extraction Tool) core genome pipeline using RaXML to examine relatedness of strains for outbreak investigation, hqSNP (high quality SNP analysis)
 
-* [Kraken](https://github.com/DerrickWood/kraken2) – taxonomic sequence classifier
+* [Kraken](https://github.com/DerrickWood/kraken2) – taxonomic sequence classifier program that examines k-mers within a read and queries a database with those k-mers. This database contains a mapping of every k-mer in Kraken genomic library to the lowest common ancestor (LCA) in a taxonomic tree of all genomes that contain k-mer.
 
 * [Spades](https://github.com/ablab/spades) – utilized for the de novo assembly of raw reads into contigs
 
@@ -17,7 +19,7 @@ layout: default
 
 * [Serotype finder](https://bitbucket.org/genomicepidemiology/serotypefinder.git) - serotyping of Escherichia coli
 
-* [Seq Sero](https://github.com/denglab/SeqSero) – Salmonella serotype identification
+* [Seq Sero](https://github.com/denglab/SeqSero) – Salmonella serotype identification for more than 2,300 serotypes from raw sequencing reads and genome assemblies
 
 * [SISTR](https://github.com/phac-nml/sistr_cmd) – Salmonella in silico typing resource, alternative to SeqSero
 
@@ -35,6 +37,4 @@ layout: default
 
 * [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) – Basic Local Alignment Search Tool, used to identify regions of similarity between amino acid or nucleotide sequences against a database or a known sequence that are above a specific threshold
 
-* Source Control / Version Control – tracking of changes made to files or authorship to be able to recall previous versions. Github is a way to keep track of changes made to files and identify who made the changes.
-
-* [StaPH-B](https://github.com/StaPH-B) – State public health bioinformaticians workgroup
+* [Microbe TRACE](https://microbetrace.herokuapp.com/) (TRAnsmission Cluster Engine) – A tool for the large-scale Molecular Epidemiology of Microbial diseases and a platform for viewing and comparing genomic and contact tracing networks by the CDC. It generates network diagrams of clusters based on genetic distance data.
