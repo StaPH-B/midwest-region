@@ -1,5 +1,15 @@
 remote_theme: adueck/good-clean-read
+
+# Site settings
 title: AMD-Symposium
-#author: Author
-#email: your-email@example.com
+tag_text: AMD-Symposium
 description: A resource of common terms and questions for understanding bioinformatics.
+#url: "http://127.0.0.1:4000"
+#baseurl: ""
+
+font-awesome-include: true # make this false if you don't need font-awesome
+
+# Build settings
+markdown: kramdown
+
+exclude: ["README.md"]
