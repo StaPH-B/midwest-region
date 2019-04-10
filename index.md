@@ -12,4 +12,4 @@ layout: default
 
 ### Basic Bioinformatics
 #### [How data is stored and moved](https://amd-midwest.github.io/bioinfo_course/data.html)
-#### [Processing and analyzing sequence data]https://amd-midwest.github.io/bioinfo_course/analysis.html()
+#### [Processing and analyzing sequence data](https://amd-midwest.github.io/bioinfo_course/analysis.html)
