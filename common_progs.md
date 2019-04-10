@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-
-# Common Bioinformatics Terms
-### Here is a list of common programs and what they do:
+## Common bioinformatics software:
 
 * [Abricate](https://github.com/tseemann/abricate) – program that screens the assembled contigs for virulence genes and acquired resistance genes
+
 * [Lyve – SET](https://github.com/lskatz/lyve-SET) – (SET: Snp Extraction Tool) core genome pipeline using RaXML to examine relatedness of strains for outbreak investigation, hqSNP (high quality SNP analysis)
 
 * [Kraken](https://github.com/DerrickWood/kraken2) – taxonomic sequence classifier
@@ -14,7 +13,7 @@ layout: default
 
 * [Quast](http://quast.sourceforge.net/quast) – evaluates the quality of the assembled genome
 
-* [Mash](https://github.com/marbl/Mash) – distance estimate for genome and metagenomes 
+* [Mash](https://github.com/marbl/Mash) – distance estimate for genome and metagenomes
 
 * [Serotype finder](https://bitbucket.org/genomicepidemiology/serotypefinder.git) - serotyping of Escherichia coli
 
@@ -24,11 +23,11 @@ layout: default
 
 * [PROKKA](https://github.com/tseemann/prokka) – rapid prokaryotic genome annotation
 
-* [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) – read and adapter trimming of the raw reads 
+* [Trimmomatic](http://www.usadellab.org/cms/?page=trimmomatic) – read and adapter trimming of the raw reads
 
-* [IqTree](http://www.iqtree.org) – program used for phylogenetic inference using maximum likelihood with fast bootstrapping and ability to change the model used for analysis 
+* [IqTree](http://www.iqtree.org) – program used for phylogenetic inference using maximum likelihood with fast bootstrapping and ability to change the model used for analysis
 
-* [Unicycler](https://github.com/rrwick/Unicycler) – assembly pipeline that can assemble short read and long read only sets as well as hybrid sets that combine short and long reads 
+* [Unicycler](https://github.com/rrwick/Unicycler) – assembly pipeline that can assemble short read and long read only sets as well as hybrid sets that combine short and long reads
 
 * [Roary](https://sanger-pathogens.github.io/Roary/) – identifies the pan genome using annotated assemblies from Prokka, utilized for reference free phylogenetic analysis
 
@@ -37,4 +36,5 @@ layout: default
 * [BLAST](https://blast.ncbi.nlm.nih.gov/Blast.cgi) – Basic Local Alignment Search Tool, used to identify regions of similarity between amino acid or nucleotide sequences against a database or a known sequence that are above a specific threshold
 
 * Source Control / Version Control – tracking of changes made to files or authorship to be able to recall previous versions. Github is a way to keep track of changes made to files and identify who made the changes.
-* [StaPH-B](https://github.com/StaPH-B) – State public health bioinformaticians workgroup 
+
+* [StaPH-B](https://github.com/StaPH-B) – State public health bioinformaticians workgroup
