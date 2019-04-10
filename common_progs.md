@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Common Bioinformatics Terms
 ### Here is a list of common terms or programs that you might hear:
 
