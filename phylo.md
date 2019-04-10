@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Common Phylogenetic Terms:
+## Common Phylogenetic Terms
 
 * Phylogenetic tree – Phylogenetic tree is a branching diagram or dendrogram illustrating the evolutionary relationships among species.
 

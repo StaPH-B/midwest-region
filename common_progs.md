@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-## Common Bioinformatics Software:
+## Common Bioinformatics Software
 
 * [StaPH-B](https://github.com/StaPH-B) – State public health bioinformaticians workgroup
 
