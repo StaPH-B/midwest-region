@@ -11,5 +11,5 @@ layout: default
 #### [Phylogenetics](https://amd-midwest.github.io/bioinfo_course/phylo.html)
 
 ### Basic Bioinformatics
-#### [How data is stored and moved](https://amd-midwest.github.io/bioinfo_course/data.html)
+#### [Working with sequencing data](https://amd-midwest.github.io/bioinfo_course/data.html)
 #### [Processing and analyzing sequence data](https://amd-midwest.github.io/bioinfo_course/analysis.html)
