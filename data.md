@@ -44,7 +44,7 @@ M03478:141:000000000-C5B4D:1:1101:25956:10945
 
 Both of reads shown above are fwd reads from the same flowcell tile in the same y position but different x positions.
 
-##### fasta files
+##### .fasta files
 
 The fasta file format is a method of storing sequence data that has been assembled. The format includes a '>' that contains the sequence label followed by the sequence on the next line(s). The file can contain multiple sequences "multi-fasta" with each sequence starting with a '>'.
 
@@ -91,13 +91,13 @@ File compression is an important part of bioinformatics since the files are ofte
 #### How data is transfered
 ------------
 
-Sequencing data can be moved a number of ways. The most common approach to transferring data is SFTP or SCP. Interacting with databases and cloud utilities often have their own methods for transferring files securely and without loss but these methods often use a version of FTP,FTPS,SFTP,HTTP,HTTPS,SCP.
+Sequencing data can be moved a number of ways. The most common approach to transferring data is **SFTP**. Interacting with databases and cloud utilities often have their own methods for transferring files securely and without loss but these methods often use a version of FTP, FTPS, HTTP, HTTPS, SCP, or SFTP.
 
-* FTP or File Transfer Protocol is pretty universal but is not secure and does not comply with HIPAA regulations.
-* HTTP or HyperText Transfer Protocol often used for accessing websites, is widely used but is insecure.
-* FTPS or File Transfer Protocol over Secure Sockets Layer, the same as FTP but adds a layer of security
-* HTTPS or HyperText Transfer Protocol over Secure Sockets Layer, the same as HTTP but with a layer of security. Side note: always look for the HTTPS:// when using websites that ask for either a login or personal information.
-* SFTP or Secure File Transfer Protocol is a method of transferring files through an SSH or Secure Shell connection. Essentially it creates a secure connection through an unsecure network (most often the internet). This connection allows two computers to communicate across a network with confidentiality and integrity of data.
-* SCP or Secure Copy is very similar to SFTP but is only for transferring files, it can't do other things like delete files which SFTP can do.
+* **FTP** or File Transfer Protocol is pretty universal but is not secure and does not comply with HIPAA regulations.
+* **HTTP** or HyperText Transfer Protocol often used for accessing websites, is widely used but is insecure.
+* **FTPS** or File Transfer Protocol over Secure Sockets Layer, the same as FTP but adds a layer of security
+* **HTTPS** or HyperText Transfer Protocol over Secure Sockets Layer, the same as HTTP but with a layer of security. Side note: always look for the HTTPS:// when using websites that ask for either a login or personal information.
+* **SFTP** or Secure File Transfer Protocol is a method of transferring files through an SSH or Secure Shell connection. SSH creates a secure connection through an unsecure network (most often the internet). This connection allows two computers to communicate across a network with confidentiality and integrity of data.
+* **SCP** or Secure Copy is very similar to SFTP but more primitive. It can only transfer files it cannot do other things like delete files which SFTP can do.
 
-Of all these methods SFTP is the most commonly used in Bioinformatics as it provides the most secure environment that allows the safe transfer of data.
+Of all these methods **SFTP** is the most commonly used in Bioinformatics as it provides the most secure environment that allows the safe transfer of data.
