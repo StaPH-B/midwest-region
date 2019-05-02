@@ -26,7 +26,7 @@ Reference mapping is a process of selecting a reference sequence and then mappin
 ** *De novo* Assembly**
 The *de novo* assembly process uses overlapping portions of the sequencing reads to generate contiguous sequences also known as contigs. The advantage of this approach is that it is independent of a reference sequence. The final output is the best representation of the sequencing reads. However, repetitive regions of the genome can cause issues with the process of generating contiguous sequence.
 
-![https://people.eecs.berkeley.edu/~penpornk/cs267.spr15/hw3/assembly.png](https://amd-midwest.github.io/bioinfo_course/images/mapping.png "de novo assembly")
+![https://people.eecs.berkeley.edu/~penpornk/cs267.spr15/hw3/assembly.png](https://amd-midwest.github.io/bioinfo_course/images/assembly.png "de novo assembly")
 
 ##### Comparison
 Once a genomic sequence or genomic contigs have been generated these can be used as the input for a vast number of different tools and analyses. For example the resistance detection tool [Abricate](https://github.com/tseemann/abricate) searches through the contigs to find known antimicrobial resistance mechanisms.
