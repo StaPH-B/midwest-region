@@ -35,6 +35,6 @@ layout: default
 3:15pm &nbsp; <b> Using Information for Public Health Action </b><br />
 <ul> <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Brandt_UsingInformationforPublicHealthAction.pdf">Molecular HIV Surveillance (SHiNe) Shared HIV Networks</a> - <i> Mary-Grace Brandt, PhD, MDHHS </i></li>
   <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/George_UsingInformationforPublicHealthAction.pdf">KY Department for Public Health: Sequencing and Surveillance</a> - <i> Karim George, Kentucky Department of Health </i></li>
-  <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Omura_UsingInformationforPublicHealthAction.pdf">ODH MiSeq Instrument Validation (Limited Measures)</a>] - <i> Keoni Omura, MS, Ohio Department of Health</i></li>
+  <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Omura_UsingInformationforPublicHealthAction.pdf">ODH MiSeq Instrument Validation (Limited Measures)</a>] - <i> Keoni Omura, MS, Ohio Department of Health</i></li></ul>
 
 4:00pm &nbsp; <b>Closeout and Next Steps</b><br />
