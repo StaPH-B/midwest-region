@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+<html>
 <h1 align="center"> Midwest Advanced Molecular Detection (AMD) Training Symposium
 </p>
 <h3 align="center">Public Health Genomics 101</p>
@@ -13,7 +14,7 @@ layout: default
 <h4><u> Agenda</p></u>
 <br/>
 
-8:00am &nbsp; <b>[Welcome](https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Soehnlen_OpeningRemarks.pdf "Welcome Presentation")</b> - <i>Marty Soehnlen, PhD, MDHHS </i>  
+8:00am &nbsp; <b>[Welcome](https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Soehnlen_OpeningRemarks.pdf "Welcome Presentation")</b> - <i>Marty Soehnlen, PhD, MDHHS </i>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> CDC Office of Advanced Molecular Detection </b> - <i> Nathelia Barnes, DHSc, Centers for Disease Control and Prevention
 
 9:00am &nbsp; <b>Regional Round Tables</b>
@@ -40,3 +41,5 @@ layout: default
 - [ODH MiSeq Instrument Validation (Limited Measures)](https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Omura_UsingInformationforPublicHealthAction.pdf "MiSeq Validation Presentation") - <i> Keoni Omura, MS, Ohio Department of Health</i>
 
 4:00pm &nbsp; <b>Closeout and Next Steps</b>
+
+</html>
