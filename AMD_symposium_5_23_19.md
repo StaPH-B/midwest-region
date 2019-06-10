@@ -20,7 +20,7 @@ layout: default
 
 10:00am <b><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Kramer_Rodeman_ChemistryofAMD.pdf">The Chemistry of AMD</a> </b> - <i>Rebecca Kramer, MDHHS; Kevin Rodeman, MDHHS</i><br />
 
-11:00am <b>Phylogenetics</b> - <i>Sebastian Zoellner, PhD, University of Michigan</i><br />
+11:00am <b><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Zoellner_Phylogeny.pdf">Phylogenetics</a></b> - <i>Sebastian Zoellner, PhD, University of Michigan</i><br />
 
 12:00pm Lunch<br />
 
@@ -35,6 +35,6 @@ layout: default
 3:15pm &nbsp; <b> Using Information for Public Health Action </b><br />
 <ul> <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Brandt_UsingInformationforPublicHealthAction.pdf">Molecular HIV Surveillance (SHiNe) Shared HIV Networks</a> - <i> Mary-Grace Brandt, PhD, MDHHS </i></li>
   <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/George_UsingInformationforPublicHealthAction.pdf">KY Department for Public Health: Sequencing and Surveillance</a> - <i> Karim George, Kentucky Department of Health </i></li>
-  <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Omura_UsingInformationforPublicHealthAction.pdf">ODH MiSeq Instrument Validation (Limited Measures)</a>] - <i> Keoni Omura, MS, Ohio Department of Health</i></li></ul>
+  <li><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Omura_UsingInformationforPublicHealthAction.pdf">ODH MiSeq Instrument Validation (Limited Measures)</a> - <i> Keoni Omura, MS, Ohio Department of Health</i></li></ul>
 
 4:00pm &nbsp; <b>Closeout and Next Steps</b><br />
