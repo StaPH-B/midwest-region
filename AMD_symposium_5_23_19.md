@@ -14,7 +14,7 @@ layout: default
 8:00am &nbsp; <b><a href="https://amd-midwest.github.io/bioinfo_course/AMD_symposium_pres/Soehnlen_OpeningRemarks.pdf">Welcome</a></b> - <i>Marty Soehnlen, PhD, MDHHS </i><br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b> CDC Office of Advanced Molecular Detection </b> - <i> Nathelia Barnes, DHSc, Centers for Disease Control and Prevention </i><br />
 
-9:00am &nbsp; <b><a href="https://staph-b.github.io/midwest-region/AMD_symposium_roundtable.md">Regional Round Tables</a></b><br />
+9:00am &nbsp; <b><a href="https://staph-b.github.io/midwest-region/AMD_symposium_roundtable.html">Regional Round Tables</a></b><br />
 
 9:45am &nbsp; Break<br />
 
