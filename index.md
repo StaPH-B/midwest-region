@@ -2,8 +2,8 @@
 layout: default
 ---
 
-## Advanced Molecular Detection Midwest Resource
-![AMD Midwest States](https://staph-b.github.io/midwest-region/images/amd-midwest-region.png "AMD Midwest States")
+## Advanced Molecular Detection Midwest
+
 
 ### [Midwest Advanced Molecular Detection (AMD) Training Symposium: Public Health Genomics 101](https://staph-b.github.io/midwest-region/AMD_symposium_5_23_19.html)
 

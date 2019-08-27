@@ -2,11 +2,11 @@
 remote_theme: adueck/good-clean-read
 
 # Site settings
-title: AMD-Symposium
-tag_text: Midwest Bioinformatics and Sequencing Resource
+title: AMD Midwest
+tag_text: AMD Midwest Region Resource Site
 description: A resource of common terms and questions for understanding sequencing and bioinformatics.
 #url: "http://127.0.0.1:4000"
-#baseurl: ""
+#baseurl: "https://staph-b.github.io/midwest-region/"
 
 font-awesome-include: true # make this false if you don't need font-awesome
 

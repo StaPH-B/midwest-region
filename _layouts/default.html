@@ -18,8 +18,16 @@
 <body>
   <article>
    <div class="container">
-    <h1><a href="./">{{ site.tag_text }}</a></h1>
-    {{ content }}
+       <div style="width:50%;float:left">
+         <img src="https://staph-b.github.io/midwest-region/images/amd-midwest-region.png" alt="AMD Midwest States"/>
+      </div>
+      <div style="width:50%;float:right;font-size: 4vw;">
+        <b><a href="./" style="color:black;text-decoration:none;">{{ site.tag_text }}</a></b>
+      </div>
+    </div>
+
+    <div class="container" style="padding-top:20%">
+      {{ content }}
     </div>
   </article>
 <script src="{{ site.baseurl }}/scripts/rrssb.min.js"></script>
