@@ -16,10 +16,10 @@ In an effort to make the site more usable and accessible we have restructured an
 ### Resources
 
 #### Bioinformatics jargon for a bargain!
-##### [General Bioinformatics Terms](https://staph-b.github.io/midwest-region/bioinformatics_terms.html)
-##### [Common Bioinformatics Software](https://staph-b.github.io/midwest-region/common_progs.html)
-##### [Phylogenetics Terms](https://staph-b.github.io/midwest-region/phylo.html)
+###### [General Bioinformatics Terms](https://staph-b.github.io/midwest-region/bioinformatics_terms.html)
+###### [Common Bioinformatics Software](https://staph-b.github.io/midwest-region/common_progs.html)
+###### [Phylogenetics Terms](https://staph-b.github.io/midwest-region/phylo.html)
 
 #### Demystifying sequencing analysis without paralysis!
-##### [Working with sequencing data](https://staph-b.github.io/midwest-region/data.html)
-##### [Processing and analyzing sequence data](https://staph-b.github.io/midwest-region/analysis.html)
+###### [Working with sequencing data](https://staph-b.github.io/midwest-region/data.html)
+###### [Processing and analyzing sequence data](https://staph-b.github.io/midwest-region/analysis.html)
