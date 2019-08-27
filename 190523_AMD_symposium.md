@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1 align="center"> Midwest Advanced Molecular Detection (AMD) Training Symposium</h1>
+<h2 align="center"> Midwest Advanced Molecular Detection (AMD) Training Symposium</h2>
 
 <h3 align="center">Public Health Genomics 101</h3>
 <h4 align="center"><i>Sponsored by Michigan Department of Health and Human Services (MDHHS) Bureau of Laboratories and the University of Michigan School of Public Health MAC-EPID Program</i></h4>
