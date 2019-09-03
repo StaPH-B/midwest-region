@@ -15,17 +15,17 @@ Hospital Acquired Infection Outbreaks and Antimicrobial Resistance Detection</h3
 
 1:15 - 1:30 pm &nbsp; <b><a href="">Welcome and Introduction</a></b><br />
 
-1:30 - 2:15 pm &nbsp; <b><a href="">Using phylogenies in outbreak investigations </a> </b> - <i>Dr. Kelly Oakenson, Utah
+1:30 - 2:15 pm &nbsp; <b><a href="https://staph-b.github.io/midwest-region/190725_arln_meeting/2019-07-25_phylogenetics_outbreaks_oakeson.pdf">Using phylogenies in outbreak investigations </a> </b> - <i>Dr. Kelly Oakenson, Utah
 Public Health Laboratory</i><br />
 
-2:15 - 3:00 pm &nbsp; <b><a href="">Validating WGS for AR detection </a> </b> - <i>Dr. Sara Blosser, Indiana State Department of
+2:15 - 3:00 pm &nbsp; <b><a href="https://staph-b.github.io/midwest-region/190725_arln_meeting/2019-07-25_clia_wgs_blosser.pdf">Validating WGS for AR detection </a> </b> - <i>Dr. Sara Blosser, Indiana State Department of
 Health Laboratories</i><br />
 
 3:00 - 3:15 pm &nbsp; <b><a href="">Break</a></b><br />
 
-3:15 - 3:35 pm &nbsp; <b><a href="">National Strategy for HAI/AR Sequencing </a> </b> - <i>Dr. Richard Stanton and Gillian McAllister, CDC DHQP</i><br />
+3:15 - 3:35 pm &nbsp; <b><a href="https://staph-b.github.io/midwest-region/190725_arln_meeting/2019-07-25_bioinformatics_stanton_mcallister.pdf">National Strategy for HAI/AR Sequencing </a> </b> - <i>Dr. Richard Stanton and Gillian McAllister, CDC DHQP</i><br />
 
-3:35 - 4:15 pm &nbsp; <b><a href="">Support available from the Bioinformatics
+3:35 - 4:15 pm &nbsp; <b><a href="https://staph-b.github.io/midwest-region/190725_arln_meeting/2019-07-25_bioinformatics_florek.pdf">Support available from the Bioinformatics
 Regional Resource </a> </b> - <i>Dr. Kelsey Florek,
 Wisconsin State Laboratory of Hygiene</i><br />
 
