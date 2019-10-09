@@ -6,8 +6,8 @@ layout: default
 
 
 ### News and Updates
-#### [August 27, 2019](#news-and-updates)
-In an effort to make the site more usable and accessible we have restructured and organized the site. Please check back to see any updates on future meetings or training or additional resources.
+#### [October 9, 2019](#news-and-updates)
+Our first issue of the AMD-Midwest Newsletter is available see it [here](https://staph-b.github.io/midwest-region/newsletters/2019-10_newsletter.pdf).
 
 ### Past Symposiums or Meeting Slides
 #### [July 25, 2019: AR Lab Network Regional Meeting WGS Session](https://staph-b.github.io/midwest-region/190725_arln_meeting.html)
