@@ -6,6 +6,8 @@ layout: default
 
 
 ### News and Updates
+#### [December 3, 2019](#news-and-updates)
+The December issue of AMD-Midwest Newsletter is available!! See it [here](https://staph-b.github.io/midwest-region/newsletters/2019-12_newsletter.pdf).
 #### [November 8, 2019](#news-and-updates)
 The November issue of AMD-Midwest Newsletter is available!! See it [here](https://staph-b.github.io/midwest-region/newsletters/2019-11_newsletter.pdf).
 #### [October 9, 2019](#news-and-updates)
