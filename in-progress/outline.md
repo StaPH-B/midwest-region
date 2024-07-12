@@ -13,16 +13,30 @@
 
 ### What do bioinformaticians do?
 
-Bioinformaticians analyze biological data using computers. The more accurate (but complex) answer is there are three main things a bioinformatician does:
+Bioinformaticians analyze biological data using computers. The more accurate (but complex) answer is that there are three main things a bioinformatician does:
 
  1. Analyze data
  2. Develop methods/software
  3. Model biological systems/processes
  
 ## Sequencing
+https://www.integra-biosciences.com/united-states/en/blog/article/dna-sequencing-methods-sanger-ngs
 
 ### Sanger Sequencing
 
-### Next-Generation Sequencing
+The first generation of sequencing technology
 
-### Short vs long read sequencing
+### Next Generation Sequencing (WGS)
+
+The second generation of sequencing tech
+
+##### Short-read Sequencing
+Illumina
+Pyrosequencing (now rarely used)
+
+#### Long-read Sequencing
+
+The third generation of sequencing technologies
+
+PacBio
+Oxford Nanopore
