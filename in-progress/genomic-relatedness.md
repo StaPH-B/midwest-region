@@ -17,12 +17,15 @@
 - **Single nucleotide polymorphism (SNP):** A genomic variant at a single base position in the genome or DNA sequence. SNPs are identified as differences from a reference sequence or as differences from other isolates.
 
 ### SNPS
-In the figure a SNP occurs at position nine and fifteen in the DNA sequence. Isolate 1 has a ‘A’ nucleotide, while the reference has a ‘T’ nucleotide. SNP combinations and total number of SNPs can be used to identify relatedness between isolates.
+In the figure a SNP occurs at position nine and fifteen in the DNA sequence. Isolate 1 has a ‘A’ nucleotide, while the reference has a ‘T’ nucleotide. SNP combinations and total number of SNPs can be used to identify
+relatedness between isolates.
  
-SNPs accumulate over time, which allows us to assess relatedness between individuals. In general, the more SNP differences two members of a species have, the less likely it is that they are related. Conversely, if two members of a species have very few SNP differences, the more likely it is that they are related.
+SNPs accumulate over time, which allows us to assess relatedness between individuals. In general, the more SNP differences two members of a species have, the less likely it is that they are related. Conversely, if two
+members of a species have very few SNP differences, the more likely it is that they are related.
 
 #### Not all SNPs are equal, some may not even be included!
-Our ability to accurately identify SNPs is limited by the sequencing technology we use and how we analyze our sequencing data. Sequencing technologies have associated error rates, which can introduce false SNPs into our sequence data. Additionally, bioinformatic workflows differ in the methods or quality metrics they use to confidently identify SNPs. While many organizations have defined best practices for identifying SNPs, there is no current consensus on how to confidently identify SNPs in sequencing data. The SNPs identified between isolates can vary greatly from workflow to workflow, so SNP results should always be evaluated with additional analyses.
+Our ability to accurately identify SNPs is limited by the sequencing technology we use and how we analyze our sequencing data. Sequencing technologies have associated error rates, which can introduce false SNPs into
+our sequence data. Additionally, bioinformatic workflows differ in the methods or quality metrics they use to confidently identify SNPs. While many organizations have defined best practices for identifying SNPs, there is no current consensus on how to confidently identify SNPs in sequencing data. The SNPs identified between isolates can vary greatly from workflow to workflow, so SNP results should always be evaluated with additional analyses.
 
 ## Methods for Determining Relatedness
 
