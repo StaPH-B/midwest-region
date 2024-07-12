@@ -4,6 +4,8 @@ layout: default
 
 # Advanced Molecular Detection Midwest
 
-## Resources
+## Demystifying Bioinformatics
 
 ## News and Updates
+
+## Contact Us
