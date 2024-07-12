@@ -21,7 +21,7 @@ In the figure a SNP occurs at position nine and fifteen in the DNA sequence. Iso
  
 SNPs accumulate over time, which allows us to assess relatedness between individuals. In general, the more SNP differences two members of a species have, the less likely it is that they are related. Conversely, if two members of a species have very few SNP differences, the more likely it is that they are related.
 
-### Not all SNPs are equal, some may not even be included!
+#### Not all SNPs are equal, some may not even be included!
 Our ability to accurately identify SNPs is limited by the sequencing technology we use and how we analyze our sequencing data. Sequencing technologies have associated error rates, which can introduce false SNPs into our sequence data. Additionally, bioinformatic workflows differ in the methods or quality metrics they use to confidently identify SNPs. While many organizations have defined best practices for identifying SNPs, there is no current consensus on how to confidently identify SNPs in sequencing data. The SNPs identified between isolates can vary greatly from workflow to workflow, so SNP results should always be evaluated with additional analyses.
 
 ## Methods for Determining Relatedness
@@ -35,7 +35,7 @@ Methods for determining genomic relatedness fall into two major categories:
 #### Multilocus sequence typing (MLST)
 
 ##### It’s all about the loci, but how many is multi?
-Originally multi-locus sequence typing (MLST) was devised as a way to characterize DNA sequences. Before next-generation sequencing (NGS) became available, a method was developed to characterize and identify isolates by PCR amplifying and sequencing a small portion of 7 - 8 genes found within every organism of that genus/species. These genes are well conserved (i.e., they accumulate very few mutations over time), so it is possible to identify and type sequences using combinations of mutations. MLST works well for tracking organisms on a global level, but it is not very useful for outbreak investigations, because it uses a very small portion of the genome that doesn’t change very often.
+Originally multi-locus sequence typing (MLST) was devised as a way to characterize DNA sequences. Before next-generation sequencing (NGS) became available, this method was developed to characterize and identify isolates by PCR amplifying and sequencing a small portion of 7 - 8 housekeeping genes found within every organism of that genus/species. These genes are well conserved (i.e. they accumulate very few mutations over time), so it is possible to identify and type sequences using combinations of mutations. MLST works well for tracking organisms on a global level, but it is not very useful for outbreak investigations, because it uses such a small portion of the genome that doesn’t change very often.
 
 #### Core genome multilocus sequence typing (cgMLST)
 
