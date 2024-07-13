@@ -3,6 +3,7 @@
 ## What is bioinformatics?
 
 ### Bioinformatics defined:
+
 "Bioinformatics is an interdisciplinary field that develops computational methods and tools for analyzing biological data"
 
 ### Disciplines that make up bioinformatics:
@@ -24,10 +25,12 @@ Bioinformaticians analyze biological data using computers. The more accurate (bu
  
 ## Sequencing
 
+### Sequencing Technologies
+
 Sources:
 - https://www.integra-biosciences.com/united-states/en/blog/article/dna-sequencing-methods-sanger-ngs
 
-### Sanger Sequencing
+#### Sanger Sequencing
 
 Sources: 
 - https://www.sigmaaldrich.com/US/en/technical-documents/protocol/genomics/sequencing/sanger-sequencing
@@ -39,9 +42,9 @@ Figures to be included:
  - Chain termination gel
  - Chromatogram
 
-### Next Generation Sequencing (NGS)
+#### Next Generation Sequencing (NGS)
 
-AKA high-throughput sequencing 
+AKA high-throughput sequencing and "massively parallel" sequencing
 Sequencing by synthesis (SBS)
 
 #### Short-read Sequencing
@@ -61,7 +64,6 @@ Figures to be included:
 #### Long-read Sequencing
 
 Sources:
-
  - https://www.pacb.com/blog/long-read-sequencing/
 
 The third generation of sequencing technologies
@@ -72,16 +74,29 @@ Examples include:
  - Oxford Nanopore
 
 Figures to be included: 
- - HiFi sequencing process
+ - HiFi/SMRT sequencing process
  - Nanopore sequencing process
  
- #### Short- vs Long-Read Sequencing
+#### Short- vs Long-Read Sequencing
  
  Advantages and disadvantages of each technology
  
-### Sanger Sequencing vs NGS
+#### Sanger Sequencing vs NGS
 
-### Whole Genome Sequencing (WGS)
+### Types of Sequencing
+
+Sources:
+ - https://www.idtdna.com/pages/community/blog/post/let-s-talk-about-sequencing
+
+#### Whole Genome Sequencing (WGS)
+
+#### Targeted Sequencing
+
+#### Whole Exome Sequencing (WES)
+
+#### Amplicon Sequencing
+
+#### Hybridization Capture
 
 ## The Omics
 
