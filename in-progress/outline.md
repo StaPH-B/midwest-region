@@ -41,13 +41,17 @@ Figures to be included:
 
 ### Next Generation Sequencing (NGS)
 
+AKA high-throughput sequencing 
+Sequencing by synthesis (SBS)
+
 #### Short-read Sequencing
 The second generation of sequencing tech
 
 Examples include:
 
  - Illumina
- - Pyrosequencing (now rarely used)
+	 - Paired- vs single-end sequencing
+ - Pyrosequencing (now defunct)
 
 Figures to be included: 
  - Illumina sequencing process (includes bridge amplification)
@@ -56,11 +60,33 @@ Figures to be included:
  
 #### Long-read Sequencing
 
+Sources:
+
+ - https://www.pacb.com/blog/long-read-sequencing/
+
 The third generation of sequencing technologies
 
 Examples include:
 
-PacBio
-Oxford Nanopore
+ - PacBio (HiFi)
+ - Oxford Nanopore
 
+Figures to be included: 
+ - HiFi sequencing process
+ - Nanopore sequencing process
+ 
+ #### Short- vs Long-Read Sequencing
+ 
+ Advantages and disadvantages of each technology
+ 
 ### Sanger Sequencing vs NGS
+
+### Whole Genome Sequencing (WGS)
+
+## The Omics
+
+Genomics
+Transcriptomics
+Proteomics 
+Metabolomics
+The meta-omics
