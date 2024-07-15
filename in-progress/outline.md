@@ -50,18 +50,30 @@ Sources:
 AKA "high-throughput" or "massively parallel" sequencing.
 
 #### Short-read Sequencing
+
+Sources:
+- https://www.illumina.com/science/technology/next-generation-sequencing/sequencing-technology.html
+- https://www.illumina.com/science/technology/next-generation-sequencing/plan-experiments/paired-end-vs-single-read.html
+- https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/next-generation-sequencing/454-sequencing/
+- https://www.thermofisher.com/us/en/home/life-science/sequencing/next-generation-sequencing/ion-torrent-next-generation-sequencing-technology.html
+
 The second generation of sequencing technology.
 
 Examples include:
 
  - Illumina
-	 - Paired- vs single-end sequencing
+	 - Uses sequencing by synthesis (SBS), a DNA sequencing method in which DNA polymerases and dNTPs are used to replicate (synthesize) the strand to be sequenced. A fluorescently labeled reversible terminator is imaged as each dNTP is added, and then cleaved to allow incorporation of the next base.
+	 - Illumina sequence data can be paired or single-end. Single-read sequencing involves sequencing DNA from only one end. Paired-end sequencing allows users to sequence both ends of a fragment
  - Pyrosequencing (454; now defunct)
+	 - Also uses SBS, but relies on the detection of pyrophosphate release and the generation of light upon nucleotide incorporation.
+- IonTorrent
+	- Also uses SBS, but relies on the detection of hydrogen ions that are released during the polymerization of DNA.
 
 Figures to be included: 
  - Illumina sequencing process (includes bridge amplification)
  - Illumina flow cell color fluorescence
  - Pyrosequencing process
+ - IonTorrent sequencing process
  
 #### Long-read Sequencing
 
@@ -98,14 +110,23 @@ Long-read sequencing:
 
 Sources:
  - https://www.idtdna.com/pages/community/blog/post/let-s-talk-about-sequencing
+ - https://www.idtdna.com/pages/technology/next-generation-sequencing/dna-sequencing/targeted-sequencing
 
 #### Whole Genome Sequencing (WGS)
 
+Sequencing the entirety of the DNA sequence of an organism's genome. WGS data is the most common type of sequencing data analyzed by public health bioinformaticians.
+
 #### Targeted Sequencing
+
+Sequencing specific area of interest in the genome, such as a gene or coding region. 
 
 #### Whole Exome Sequencing (WES)
 
+Sequencing only the protein coding genes (exons) of the genome.
+
 #### Amplicon Sequencing
+
+Sequencing DNA fragments amplified by PCR (AKA amplicons). 
 
 #### Hybridization Capture
 
@@ -207,7 +228,6 @@ Disadvantages:
 
 #### Examples of non-standardized methods
  - Dryad
- - Utah’s core-genome pipeline
  - MycoSNP
 
 ## Infrastructure
