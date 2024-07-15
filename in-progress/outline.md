@@ -131,34 +131,84 @@ Methods for determining genomic relatedness fall into two major categories:
 1. Standardized
 2. Non-standardized
 
-### Standardized methods
+### Standardized  Methods
 
-#### Multilocus sequence typing (MLST)
+AKA sequence typing methods, these methods include MLST (multilocus sequence typing), cgMLST (core-genome multilocus sequence typing) and wgMLST (whole-genome multilocus sequence typing), which are all built on the same principle of using a standard set of multiple genes/gene fragments (loci) to characterize isolates. Unique sequences for each locus are assigned allele numbers and isolates are identified based on their allelic profiles
 
-#### Core genome multilocus sequence typing (cgMLST)
+#### MLST
+Uses the sequences of ~7 house-keeping gene fragments and is the lowest resolution of the ST methods
 
-#### Whole-genome multilocus sequence typing (wgMLST)
+Still used to differentiate isolates, but phylogenetic analysis of only MLST loci is less common than it once was due to advances in sequencing and bioinformatics that have allowed for higher resolution analyses
 
-#### Advantages of standardized methods
+#### cgMLST
 
-#### Disadvantages of standardized methods
+A fixed and agreed upon number of loci of a species that are present in all isolates of a given group, or a subset of that group
 
-#### Examples of standardized methods
+Few pathogens share all genes, so comparisons of the core-genome of a given group provides high-resolution data across a group of related (but not identical) isolates
 
-PubMLST
-Bionumerics
+Higher resolution than MLST, as core-genomes can contain thousands of loci
 
-### Non-Standardized Methods
+#### wgMLST
+
+All the loci of a given isolate are compared to equivalent loci in other isolates
+
+Includes cgMLST loci and adds a selection of accessory loci as well.
+
+Most applicable to single-clone pathogens with closed genomes or to very closely related variants of more diverse organisms
+
+Highest resolution ST method
+
+#### Advantages and Disadvantages of standardized/ST methods
+
+Advantages: 
+ - Loci used in ST schemes are readily maintained and shared among laboratories using the same or similar online databases
+ - Data can be analyzed by laboratorians without formal training in bioinformatics
+ - Can be high resolution  (in the case of cg/wgMLST)
+
+Disadvantages of standardized/ST methods:
+ - Requires database curation and defined/agreed upon schemes i.e. not all organisms of interest have schemes available
+ - Can be low resolution (in the case of MLST)
+ 
+#### Examples of standardized/ST methods
+ - PubMLST (>100 organisms have schemes available)
+ - Pulsenet and Bionumerics
+
+### Non-standardized methods
+
+These methods include core-genome and SNP analyses
 
 #### SNP analysis
 
-#### Core genome analysis
+Identifies single nucleotide differences between isolates and a single reference genome
 
-#### Advantages of non-standardized methods
+Very high resolution (based on SNPs)
 
-#### Disadvantages of non-standardized methods
+Not all organisms of interest have complete reference genomes, and ideally reference genomes should be closely related to the genome of the isolates of interest to identify informative SNPs
+
+#### Core-genome analysis
+
+Similar to cgMLST, relies on the analysis of genes present in all isolates of a population (usually 95-99% of isolates)
+
+This complement of genes is not standardized, it is unique to the population you are analyzing on a population by population basis
+
+High resolution
+
+Most useful for organisms that lack ST schemes, as well as an appropriate reference genome by which to perform SNP analysis
+
+#### Advantages and disadvantages of non-standardized methods
+
+Advantages:
+ - Do not require predefined schemes
+ - High resolution
+
+Disadvantages:
+ - No universal method for typing isolates
+ - Can require bioinformatics expertise to perform
 
 #### Examples of non-standardized methods
+ - Dryad
+ - Utah’s core-genome pipeline
+ - MycoSNP
 
 ## Infrastructure
 
