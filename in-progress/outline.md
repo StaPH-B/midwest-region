@@ -135,15 +135,15 @@ Sequencing DNA fragments amplified by PCR (AKA amplicons).
 
 ## The Omics
 
-Genomics: The study of all genes in an organism i.e. its genome.  
+**Genomics:** The study of all genes in an organism i.e. its genome.  
 
-Transcriptomics: The study of all RNA transcripts in an organism i.e. its transciptome.  
+**Transcriptomics:** The study of all RNA transcripts in an organism i.e. its transciptome.  
 
-Proteomics: The study of all proteins in an organism i.e. its proteome.  
+**Proteomics:** The study of all proteins in an organism i.e. its proteome.  
 
-Metabolomics: The study of study of small molecules, commonly known as metabolites, within an organism.  
+**Metabolomics:** The study of small molecules (metabolites) in an organism i.e. its metabolome.   
 
-The meta-omics e.g. metagenomics and metatranscriptomics: The omic studies described above applied to microbial communities, rather than single microbial species.  
+**The meta-omics e.g. metagenomics and metatranscriptomics:** The omic studies described above applied to microbial communities, rather than single species.  
 
 ## Genome Assembly
 
