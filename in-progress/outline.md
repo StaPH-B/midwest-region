@@ -123,7 +123,42 @@ The meta-omics
 
 ### *De Novo*
 
-## Quality Control
+## Genomic Relatedness
+
+## Methods for Determining Relatedness
+
+Methods for determining genomic relatedness fall into two major categories: 
+1. Standardized
+2. Non-standardized
+
+### Standardized methods
+
+#### Multilocus sequence typing (MLST)
+
+#### Core genome multilocus sequence typing (cgMLST)
+
+#### Whole-genome multilocus sequence typing (wgMLST)
+
+#### Advantages of standardized methods
+
+#### Disadvantages of standardized methods
+
+#### Examples of standardized methods
+
+PubMLST
+Bionumerics
+
+### Non-Standardized Methods
+
+#### SNP analysis
+
+#### Core genome analysis
+
+#### Advantages of non-standardized methods
+
+#### Disadvantages of non-standardized methods
+
+#### Examples of non-standardized methods
 
 ## Infrastructure
 
@@ -132,3 +167,4 @@ The meta-omics
 ## Genomic Epidemiology
 
 ## Data Visualization
+
