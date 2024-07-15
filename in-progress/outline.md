@@ -111,6 +111,9 @@ Long-read sequencing:
 Sources:
  - https://www.idtdna.com/pages/community/blog/post/let-s-talk-about-sequencing
  - https://www.idtdna.com/pages/technology/next-generation-sequencing/dna-sequencing/targeted-sequencing
+ - https://www.abmgood.com/assets/catalog/customservice/amplicon_sequencing/Amplicon-Seq-v4.png
+ - https://geneticeducation.co.in/what-is-targeted-sequencing-and-how-does-it-work/
+ - https://geneticeducation.co.in/wp-content/uploads/2023/05/targeted-sequencing-3.001-min.jpeg
 
 #### Whole Genome Sequencing (WGS)
 
@@ -132,11 +135,15 @@ Sequencing DNA fragments amplified by PCR (AKA amplicons).
 
 ## The Omics
 
-Genomics
-Transcriptomics
-Proteomics 
-Metabolomics
-The meta-omics
+Genomics: The study of all genes in an organism i.e. its genome.  
+
+Transcriptomics: The study of all RNA transcripts in an organism i.e. its transciptome.  
+
+Proteomics: The study of all proteins in an organism i.e. its proteome.  
+
+Metabolomics: The study of study of small molecules, commonly known as metabolites, within an organism.  
+
+The meta-omics e.g. metagenomics and metatranscriptomics: The omic studies described above applied to microbial communities, rather than single microbial species.  
 
 ## Genome Assembly
 
