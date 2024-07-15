@@ -36,7 +36,7 @@ Sources:
 - https://www.sigmaaldrich.com/US/en/technical-documents/protocol/genomics/sequencing/sanger-sequencing
 - https://letstalkscience.ca/educational-resources/backgrounders/sanger-sequencing
 
-The first generation of sequencing technology
+The first generation of sequencing technology. Uses chain termination during DNA replication to determine the DNA sequence. 
 
 Figures to be included: 
  - Chain termination gel
@@ -44,17 +44,19 @@ Figures to be included:
 
 #### Next Generation Sequencing (NGS)
 
-AKA high-throughput sequencing and "massively parallel" sequencing
-Sequencing by synthesis (SBS)
+Sources: 
+- https://www.integra-biosciences.com/united-states/en/blog/article/dna-sequencing-methods-sanger-ngs#Next_generation_sequencing
+
+AKA "high-throughput" or "massively parallel" sequencing.
 
 #### Short-read Sequencing
-The second generation of sequencing tech
+The second generation of sequencing technology.
 
 Examples include:
 
  - Illumina
 	 - Paired- vs single-end sequencing
- - Pyrosequencing (now defunct)
+ - Pyrosequencing (454; now defunct)
 
 Figures to be included: 
  - Illumina sequencing process (includes bridge amplification)
@@ -79,7 +81,16 @@ Figures to be included:
  
 #### Short- vs Long-Read Sequencing
  
- Advantages and disadvantages of each technology
+Advantages and disadvantages of each technology
+
+Short-read sequencing:
+ - Advantages: Low cost, highly accurate
+ - Disadvantages: Difficult to assemble short-read data from highly repetitive genomes, as well as plasmids
+ 
+Long-read sequencing:
+ - Advantages: Long reads can be used to assemble and resolve entire genomes and plasmids
+ - Disadvantages: More expensive than short-read sequencing and less accurate (although significant improvements in accuracy have been made)
+
  
 #### Sanger Sequencing vs NGS
 
@@ -105,3 +116,19 @@ Transcriptomics
 Proteomics 
 Metabolomics
 The meta-omics
+
+## Genome Assembly
+
+### Reference Guided
+
+### *De Novo*
+
+## Quality Control
+
+## Infrastructure
+
+## Public Repositories and Publicly Available Data
+
+## Genomic Epidemiology
+
+## Data Visualization
