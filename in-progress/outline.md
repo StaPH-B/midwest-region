@@ -1,3 +1,4 @@
+
 # Demystifying Bioinformatics
 
 ## What is bioinformatics?
@@ -120,8 +121,8 @@ The Illumina platform has been a workhorse in public health and it’s hard to b
 
 #### Sanger Sequencing vs NGS
 
-NGS is higher resolution  
-NGS can sequence more base pairs per day  
+NGS is higher resolution (thousands vs millions of base pairs)  
+NGS can sequence more base pairs per day  (millions vs billions of base pairs)
 NGS is not limited to the laboratory  
 
 ### Types of Sequencing
@@ -156,6 +157,7 @@ Sequencing only the protein coding genes (exons) of the genome.
 Sequencing DNA fragments amplified by PCR (AKA amplicons). 
 
 #### Hybridization Capture
+
 Sequencing a region of interest captured using long, biotinylated oligonucleotide baits (probes).
 
 ## The Omics
@@ -334,13 +336,16 @@ Sources:
 Figures to be included: 
  - Figure of reference guided mapping (reference genome and reads)
  
-Reference guided assembly maps reads to a reference genome by identifying reads with similar nucleotides to the reference. This method of genome assembly works well for organisms with a well-characterized reference genome and organisms with highly conserved gene content. *De novo* assembly should be used if you are interested in investigating gene content that is not present in all members of a species.
+Reference guided assembly maps reads to a reference genome by identifying reads with similar nucleotides to the reference. A reference genome is a consensus sequence of DNA for an organism.   
+
+This method of genome assembly works well for organisms with a well-characterized reference genome and organisms with highly conserved gene content. 
 
 
 ### *De Novo* Assembly
 
 Sources:
  - https://thesequencingcenter.com/knowledge-base/de-novo-assembly/
+
 Figures to be included:
 -Figure of *de novo* assembly (reads to contigs)
 
@@ -353,7 +358,7 @@ Overlapping reads are assembled into contigs, overlapping contigs are assembled 
 
 There are different types of assembly algorithms that assemblers use to reconstruct genomes. These algorithms are not necessary for a basic understanding genome assembly, but you can read more about them [here](https://www.sciencedirect.com/science/article/pii/S0888754310000492).
 
-*De novo* assembly works well for species without a reference genome and species with diverse gene content.
+*De novo* assembly works well for species without a reference genome, as well as species with diverse gene content. *De novo* assembly should be used if you are interested in investigating gene content that is not present in all members of a species.
 
 ## Genomic Relatedness
 
@@ -492,8 +497,6 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 
 * **PacBio** –  It is a single molecule real time (SMRT) sequencing developed by Pacific Biosciences, also referred as PacBio sequencing. Unlike second generation sequencing, PacBio sequences each base-pair individually. Currently, this method is widely used to study larger genomes, transcriptome metagenomics and epigenetics.
 
-* **Tape station** – The Agilent 2100 Bioanalyzer (Tape Station) is a microfluidics-based platform for size determination, quantification and quality control of DNA and RNA.
-
 * **Pyrosequencing** –  In pyrosequencing, the sequencing reaction is monitored through the release of the pyrophosphate during nucleotide incorporation. A single nucleotide is added to the sequencing chip which will lead to its incorporation in a template dependent manner. This incorporation will result in the release of pyrophosphate which is used in a series of chemical reactions resulting in the generation of light. Light emission is detected by a camera which records the appropriate sequence of the cluster. Any unincorporated bases are degraded by apyrase before the addition of the next nucleotide. This cycle continues until the sequencing reaction is complete.
 
 * **Paired end sequencing** – It involves sequencing both ends of the DNA fragment and generate high quality sequence data. It’s a simple work flow allows generation of unique ranges of insert sizes.
@@ -524,22 +527,23 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 
 * **DNA Sequence Analysis**
 
+  * **MLST (Multi Locus Sequence Typing)** – traditionally used 6-12 housekeeping genes and Sanger sequencing to identify gene variants and alleles, which can be used to generate sequence types (ST), standardized allele schemes  
+ 
   * **cgMLST (Core genome MLST)** – examines only the genes that are shared among all of the strains to assign alleles, these genes are shared by the majority of the strains within a genus
-
-  * **MLST (Multi Locus Sequence Typing)** – traditionally used 6-12 housekeeping genes and Sanger sequencing to identify gene variants and alleles, which can be used to generate sequence types (ST), standardized allele schemes
-
+  
   * **wgMLST (whole genome MLST)** – examines all genes within the genome to assign allele codes to an organism, examined on a gene by gene basis and can be either the whole gene or part of the gene to form the locus, variants within the locus are given new allele codes to generate wgMLST types.
 
-  * **Consensus** – sequence of nucleotides that represents the most commonly found base pair at a specific position, identified by aligning the raw reads
-Reference assembly: mapping reads to a reference genome in order to assembly the reads into contigs or closed genomes
+  * **Consensus** – sequence of nucleotides that represents the most commonly found base pair at a specific position, identified by aligning the raw reads.
+ 
+* **Reference assembly** – mapping reads to a reference genome in order to assembly the reads into contigs or closed genomes.
 
-  * **Reference genome** – a consensus sequence of DNA for an organism
+  * **Reference genome** – a consensus sequence of DNA for an organism.
 
-  * **Variants** – sequences of DNA that differ at specific positions when the sequences are aligned
+  * **Variants** – sequences of DNA that differ at specific positions when the sequences are aligned.
 
-  * **Alleles** – variant of a sequence, variant does not have to affect the phenotype
+  * **Alleles** – variant of a sequence, variant does not have to affect the phenotype.
 
-  * **SNP (single nucleotide polymorphism)** – a nucleotide position that can be used to discriminate strains in a population
+  * **SNP (single nucleotide polymorphism)** – a nucleotide position that can be used to discriminate strains in a population.
 
   * **HqSNP (High quality SNP)** – utilizes a program such a lyve-SET to identify SNPs that have at least 20X coverage and uses a high quality reference genome
 
