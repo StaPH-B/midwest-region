@@ -160,9 +160,19 @@ Sequencing a region of interest captured using long, biotinylated oligonucleotid
 
 ## The Omics
 
+Sources:
+- https://be.mit.edu/research-areas/omics 
+- https://www.britannica.com/science/omics
+
+"Omics is the field of research analyzing and intergrating studies of many different -omes, including the genome, proteome, and metabolome, generally using bioinformatics and computational biology."
+
+"The omics sciences share the overarching aim of identifying, describing, and quantifying the biomolecules and molecular processes that contribute to the form and function of cells and tissues."
+
+There are many different type of omics:
+
 **Genomics:** The study of all genes in an organism i.e. its genome.  
 
-The most common omics found in public health.
+Genomics is most common omics in public health; Most bioinformatics analyses in public health are focused on the genome.
 
 **Transcriptomics:** The study of all RNA transcripts in an organism i.e. its transciptome.  
 
@@ -172,9 +182,11 @@ The most common omics found in public health.
 
 **The meta-omics e.g. metagenomics and metatranscriptomics:** The omic studies described above applied to microbial communities, rather than single species.
 
-The second most common omics in public health e.g. wastewater sequencing.
+Metagenomics is the second most common omics in public health, and metagenomic analyses are becoming more common in public health e.g. wastewater sequencing.
 
 ## Working With Sequence Data
+
+After sequencing, there are several types of sequencing files to work with:
 
 ### Sequencing file types
 
@@ -312,9 +324,21 @@ Of all these methods **SFTP** is the most commonly used in Bioinformatics as it 
 
 ## Genome Assembly
 
-### Reference Guided
+Genome assembly is the aligning and merging of DNA sequence data to reconstruct the original sequence. It is an essential part of 
 
-### *De Novo*
+### Reference Guided Assembly
+
+### *De Novo* Assembly
+
+Sources:
+ - https://thesequencingcenter.com/knowledge-base/de-novo-assembly/
+
+*De novo* is latin for "from the beginning."  It follows that *De novo* assembly is the assembly of sequencing reads without knowledge of the correct sequence or order of those reads, and *de novo* assembly does not rely on a reference genome. 
+
+The de novo assembly process:
+Reads &#8594; Contigs &#8594; Scaffolds
+
+Overlapping reads are assembled into contigs, overlapping contigs are assembled in scaffolds, and overlapping scaffolds are assembled into chromosomes. 
 
 ## Genomic Relatedness
 
@@ -412,6 +436,9 @@ Disadvantages:
  
 ## General Bioinformatic Terms
 
+Figures to be included: 
+None
+
 ### Bioinformatics
 This discipline is involved in the collection, analysis, and storage of complex biological data, including, but not limited to genetic data. The field combines computer science, statistics, and several aspects of biology to be able to understand highly complex data.
 
@@ -442,9 +469,9 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 
 * **Linux** – An operating system much like Windows or OSX. The field of bioinformatics relies heavily on Linux-based computers and software. Although some bioinformatics programs can be compiled to run on Mac OS X and Windows systems, many require the Linux environment to run properly.
 
-* **PERL** – Another programming language similar to Python.
-
 * **Python** – Python is a popular programming language object often used for scientific computing. The Biopython utilize python-based software for bioinformatics research, thereby creating high quality reusable modules and scripts.
+
+* **PERL** – Another programming language similar to Python.
 
 ### Sequencing Instruments and Chemistry
 
