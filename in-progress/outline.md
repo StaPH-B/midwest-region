@@ -324,21 +324,36 @@ Of all these methods **SFTP** is the most commonly used in Bioinformatics as it 
 
 ## Genome Assembly
 
-Genome assembly is the aligning and merging of DNA sequence data to reconstruct the original sequence. It is an essential part of 
+Genome assembly is the aligning and merging of DNA sequence data to reconstruct the original sequence. It is an essential part of the bioinformatic analysis process.
 
 ### Reference Guided Assembly
+
+Sources:
+ - https://www.researchgate.net/figure/6-Comparison-of-reference-assembly-and-de-novo-assembly-A-Reference-assembly-maps_fig4_321179957
+ 
+Figures to be included: 
+ - Figure of reference guided mapping (reference genome and reads)
+ 
+Reference guided assembly maps reads to a reference genome by identifying reads with similar nucleotides to the reference. This method of genome assembly works well for organisms with a well-characterized reference genome and organisms with highly conserved gene content. *De novo* assembly should be used if you are interested in investigating gene content that is not present in all members of a species.
+
 
 ### *De Novo* Assembly
 
 Sources:
  - https://thesequencingcenter.com/knowledge-base/de-novo-assembly/
+Figures to be included:
+-Figure of *de novo* assembly (reads to contigs)
 
-*De novo* is latin for "from the beginning."  It follows that *De novo* assembly is the assembly of sequencing reads without knowledge of the correct sequence or order of those reads, and *de novo* assembly does not rely on a reference genome. 
+*De novo* is latin for "from the beginning."  It follows that *De novo* assembly is the assembly of sequencing reads without prior knowledge of the correct sequence or order of those reads, and *de novo* assembly does not rely on a reference genome. 
 
-The de novo assembly process:
-Reads &#8594; Contigs &#8594; Scaffolds
+The *de novo* assembly process:
+Reads &#8594; Contigs &#8594; Scaffolds &#8594; Chromosomes
 
-Overlapping reads are assembled into contigs, overlapping contigs are assembled in scaffolds, and overlapping scaffolds are assembled into chromosomes. 
+Overlapping reads are assembled into contigs, overlapping contigs are assembled in scaffolds, and overlapping scaffolds are assembled into chromosomes.
+
+There are different types of assembly algorithms that assemblers use to reconstruct genomes. These algorithms are not necessary for a basic understanding genome assembly, but you can read more about them [here](https://www.sciencedirect.com/science/article/pii/S0888754310000492).
+
+*De novo* assembly works well for species without a reference genome and species with diverse gene content.
 
 ## Genomic Relatedness
 
@@ -481,9 +496,7 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 
 * **Pyrosequencing** –  In pyrosequencing, the sequencing reaction is monitored through the release of the pyrophosphate during nucleotide incorporation. A single nucleotide is added to the sequencing chip which will lead to its incorporation in a template dependent manner. This incorporation will result in the release of pyrophosphate which is used in a series of chemical reactions resulting in the generation of light. Light emission is detected by a camera which records the appropriate sequence of the cluster. Any unincorporated bases are degraded by apyrase before the addition of the next nucleotide. This cycle continues until the sequencing reaction is complete.
 
-* **Paired end sequencing** –
-
-It involves sequencing both ends of the DNA fragment and generate high quality sequence data. It’s a simple work flow allows generation of unique ranges of insert sizes.
+* **Paired end sequencing** – It involves sequencing both ends of the DNA fragment and generate high quality sequence data. It’s a simple work flow allows generation of unique ranges of insert sizes.
 
 * **Long read sequencing** – Third generation sequencing also known as long read sequencing (LRS). LRS allows for the retrieval of much longer (>10,000bp) sequencing reads than widely-used short read sequencing systems (75-300bp). Long-read sequencing (LRS) has become increasingly important due to its strengths in resolving complex DNA regions as well as in determining full-length RNA molecules. Two important LRS technologies have been developed during the past few years, including single-molecule, real-time sequencing by Pacific Biosciences, and nanopore sequencing by Oxford Nanopore Technologies.
 
