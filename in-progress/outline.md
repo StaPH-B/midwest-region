@@ -412,13 +412,13 @@ Disadvantages:
  
 ## General Bioinformatic Terms
 
-##### Bioinformatics
+### Bioinformatics
 This discipline is involved in the collection, analysis, and storage of complex biological data, including, but not limited to genetic data. The field combines computer science, statistics, and several aspects of biology to be able to understand highly complex data.
 
-##### AMD (Advanced Molecular Detection)
+### AMD (Advanced Molecular Detection)
 This commonly may mean any form of sequencing or high-level molecular technology. There is an Office of Advanced Molecular Detection (OAMD) at CDC that provides support and input on many cross-cutting areas using advanced technologies
 
-#### Genomics
+### Genomics
 
 * **Gene** – sequence of DNA that encodes a region for a molecule (ie protein or enzymes) with function
 
@@ -434,7 +434,7 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 
 * **Structural variants (SVs)** – DNA sequence variants that are 50bp or larger, including insertions, deletions, inversions, duplications and translocations
 
-#### Programming Languages
+### Programming Languages
 
 * **BASH / Shell Script** – A programming language that is directly used by the Linux operating system. It allows for direct control of the operating system functions.
 
@@ -446,7 +446,7 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 
 * **Python** – Python is a popular programming language object often used for scientific computing. The Biopython utilize python-based software for bioinformatics research, thereby creating high quality reusable modules and scripts.
 
-#### Sequencing Instruments and Chemistry
+### Sequencing Instruments and Chemistry
 
 * **PacBio** –  It is a single molecule real time (SMRT) sequencing developed by Pacific Biosciences, also referred as PacBio sequencing. Unlike second generation sequencing, PacBio sequences each base-pair individually. Currently, this method is widely used to study larger genomes, transcriptome metagenomics and epigenetics.
 
@@ -472,7 +472,7 @@ It involves sequencing both ends of the DNA fragment and generate high quality s
 
 * **Sanger Sequencing** – DNA sequencing method that relies on a primer to bind to the DNA sequence of interest to amplify the region of interest, sequences a single DNA fragment
 
-#### Bioinformatic Analysis
+### Bioinformatic Analysis
 
 * **ANI (average nucleotide identity)** – provides a measure of how similar two genomes are at the nucleotide level
 
