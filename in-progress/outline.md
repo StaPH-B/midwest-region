@@ -79,13 +79,16 @@ Figures to be included:
 
 Sources:
  - https://www.pacb.com/blog/long-read-sequencing/
+ - https://nanoporetech.com/platform/technology
 
 The third generation of sequencing technologies
 
 Examples include:
 
  - PacBio (HiFi)
+	 - DNA polymerase in HiFi sequencing works its way around the circularized sample molecule many times over
  - Oxford Nanopore
+	 - Uses electrical currents to thread negatively charged DNA through a nanopore. Disruption of the electrical current is used to determine the DNA sequence.
 
 Figures to be included: 
  - HiFi/SMRT sequencing process
@@ -93,18 +96,29 @@ Figures to be included:
  
 #### Short- vs Long-Read Sequencing
  
-Advantages and disadvantages of each technology
+Specifications and advantages vs disadvantages of each technology
 
 Short-read sequencing:
- - Advantages: Low cost, highly accurate
+ - 300 bp max read length
+ - Millions of reads per run
+ - 99.99999% accuracy
+ - Low cost per sample
+ -  Advantages: Low cost, highly accurate
  - Disadvantages: Difficult to assemble short-read data from highly repetitive genomes, as well as plasmids
  
 Long-read sequencing:
- - Advantages: Long reads can be used to assemble and resolve entire genomes and plasmids
+ - 2.3 Mb reads
+ - Thousands of reads per run
+ - 98-99.9% accuracy (Nanpore and PacBio, respectively)
+ - High cost per sample
+ -  - Advantages: Long reads can be used to assemble and resolve entire genomes and plasmids
  - Disadvantages: More expensive than short-read sequencing and less accurate (although significant improvements in accuracy have been made)
 
- 
 #### Sanger Sequencing vs NGS
+
+NGS is higher resolution  
+NGS can sequence more base pairs per day  
+NGS is not limited to the laboratory  
 
 ### Types of Sequencing
 
