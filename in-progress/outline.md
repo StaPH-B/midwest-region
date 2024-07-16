@@ -47,7 +47,9 @@ Figures to be included:
 Sources: 
 - https://www.integra-biosciences.com/united-states/en/blog/article/dna-sequencing-methods-sanger-ngs#Next_generation_sequencing
 
-AKA "high-throughput" or "massively parallel" sequencing.
+AKA "high-throughput" or "massively parallel" sequencing.  
+
+NGS is an umbrella term for modern DNA sequencing technologies. NGS sequencing technologies can rapidly sequence DNA in parallel, and they are faster and more cost effective than the first generation of sequencing technologies that preceded them.
 
 #### Short-read Sequencing
 
@@ -111,8 +113,10 @@ Long-read sequencing:
  - Thousands of reads per run
  - 98-99.9% accuracy (Nanpore and PacBio, respectively)
  - High cost per sample
- -  - Advantages: Long reads can be used to assemble and resolve entire genomes and plasmids
+ -  Advantages: Long reads can be used to assemble and resolve entire genomes and plasmids
  - Disadvantages: More expensive than short-read sequencing and less accurate (although significant improvements in accuracy have been made)
+
+The Illumina platform has been a workhorse in public health and it’s hard to beat 99.9999% accuracy. However, shorter reads (150 - 300 base pairs) make reconstruction of genome difficult and inaccurate. Longer reads (1,000 - 2 million base pairs or longer) help resolve genome structure, which allows us to identify plasmids and gene orientation. This technology is still expensive and less accurate, but it has been useful in various applications, including mobile laboratories where sequencing can be done in the field.
 
 #### Sanger Sequencing vs NGS
 
@@ -133,6 +137,12 @@ Sources:
 
 Sequencing the entirety of the DNA sequence of an organism's genome. WGS data is the most common type of sequencing data analyzed by public health bioinformaticians.
 
+What’s the difference between NGS and whole genome sequencing (WGS)?  
+
+WGS is the process of sequencing all of an organism’s genetic material i.e. its chromosome and plasmids. Not all sequencing is WGS. For example, using a method commonly referred to as targeted amplicon sequencing (see below), we can use NGS to sequence only specific parts of the genome we’re interested in, such as virulence or antibiotic resistance genes.  
+
+**In summary:** NGS is a technology, WGS is a technique, and we can use NGS to perform WGS.
+
 #### Targeted Sequencing
 
 Sequencing specific area of interest in the genome, such as a gene or coding region. 
@@ -146,10 +156,13 @@ Sequencing only the protein coding genes (exons) of the genome.
 Sequencing DNA fragments amplified by PCR (AKA amplicons). 
 
 #### Hybridization Capture
+Sequencing a region of interest captured using long, biotinylated oligonucleotide baits (probes).
 
 ## The Omics
 
 **Genomics:** The study of all genes in an organism i.e. its genome.  
+
+The most common omics found in public health.
 
 **Transcriptomics:** The study of all RNA transcripts in an organism i.e. its transciptome.  
 
@@ -157,7 +170,9 @@ Sequencing DNA fragments amplified by PCR (AKA amplicons).
 
 **Metabolomics:** The study of small molecules (metabolites) in an organism i.e. its metabolome.   
 
-**The meta-omics e.g. metagenomics and metatranscriptomics:** The omic studies described above applied to microbial communities, rather than single species.  
+**The meta-omics e.g. metagenomics and metatranscriptomics:** The omic studies described above applied to microbial communities, rather than single species.
+
+The second most common omics in public health e.g. wastewater sequencing.
 
 ## Genome Assembly
 
@@ -258,4 +273,3 @@ Disadvantages:
 ## Genomic Epidemiology
 
 ## Data Visualization
-
