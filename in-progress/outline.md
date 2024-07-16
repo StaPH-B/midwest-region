@@ -8,13 +8,12 @@
 "Bioinformatics is an interdisciplinary field that develops computational methods and tools for analyzing biological data"
 
 ### Disciplines that make up bioinformatics:
-
+Figures to be included: 
+ - Venn diagram of biology, computer science, and mathematics.
+ 
  1. Biology, which is the "study of living organisms, divided into many specialized fields that cover their morphology, physiology, anatomy, behavior, origin, and distribution."
  2. Computer Science, which is the "study of the principles and use of computers."
  3. Mathematics, which is the "abstract science of number, quantity, and space."
-
-Figures to be included: 
- - Venn diagram of biology, computer science, and mathematics
 
 ### What do bioinformaticians do?
 
@@ -23,6 +22,8 @@ Bioinformaticians analyze biological data using computers. The more accurate (bu
  1. Analyze data
  2. Develop methods/software
  3. Model biological systems/processes
+ 
+ Analyzing data and developing methods/software are the focus of bioinformaticians in public health.
  
 ## Sequencing
 
@@ -37,11 +38,11 @@ Sources:
 - https://www.sigmaaldrich.com/US/en/technical-documents/protocol/genomics/sequencing/sanger-sequencing
 - https://letstalkscience.ca/educational-resources/backgrounders/sanger-sequencing
 
-The first generation of sequencing technology. Uses chain termination during DNA replication to determine the DNA sequence. 
-
 Figures to be included: 
  - Chain termination gel
  - Chromatogram
+
+The first generation of sequencing technology. Uses chain termination during DNA replication to determine the DNA sequence. 
 
 #### Next Generation Sequencing (NGS)
 
@@ -60,6 +61,12 @@ Sources:
 - https://www.ebi.ac.uk/training/online/courses/functional-genomics-ii-common-technologies-and-data-analysis-methods/next-generation-sequencing/454-sequencing/
 - https://www.thermofisher.com/us/en/home/life-science/sequencing/next-generation-sequencing/ion-torrent-next-generation-sequencing-technology.html
 
+Figures to be included: 
+ - Illumina sequencing process (includes bridge amplification)
+ - Illumina flow cell color fluorescence
+ - Pyrosequencing process
+ - IonTorrent sequencing process
+
 The second generation of sequencing technology.
 
 Examples include:
@@ -72,18 +79,16 @@ Examples include:
 - IonTorrent
 	- Also uses SBS, but relies on the detection of hydrogen ions that are released during the polymerization of DNA.
 
-Figures to be included: 
- - Illumina sequencing process (includes bridge amplification)
- - Illumina flow cell color fluorescence
- - Pyrosequencing process
- - IonTorrent sequencing process
- 
 #### Long-read Sequencing
 
 Sources:
  - https://www.pacb.com/blog/long-read-sequencing/
  - https://nanoporetech.com/platform/technology
 
+Figures to be included: 
+ - HiFi/SMRT sequencing process
+ - Nanopore sequencing process
+ 
 The third generation of sequencing technologies
 
 Examples include:
@@ -93,10 +98,6 @@ Examples include:
  - Oxford Nanopore
 	 - Uses electrical currents to thread negatively charged DNA through a nanopore. Disruption of the electrical current is used to determine the DNA sequence.
 
-Figures to be included: 
- - HiFi/SMRT sequencing process
- - Nanopore sequencing process
- 
 #### Short- vs Long-Read Sequencing
  
 Specifications and advantages vs disadvantages of each technology
@@ -117,13 +118,13 @@ Long-read sequencing:
  -  Advantages: Long reads can be used to assemble and resolve entire genomes and plasmids
  - Disadvantages: More expensive than short-read sequencing and less accurate (although significant improvements in accuracy have been made)
 
-The Illumina platform has been a workhorse in public health and it’s hard to beat 99.9999% accuracy. However, shorter reads (150 - 300 base pairs) make reconstruction of genome difficult and inaccurate. Longer reads (1,000 - 2 million base pairs or longer) help resolve genome structure, which allows us to identify plasmids and gene orientation. This technology is still expensive and less accurate, but it has been useful in various applications, including mobile laboratories where sequencing can be done in the field.
+The Illumina platform has been a workhorse in public health and it’s hard to beat 99.9999% accuracy. However, shorter reads (150 - 300 base pairs) make reconstruction of genome difficult and inaccurate. Longer reads (1,000 - 2 million base pairs or longer) help resolve genome structure, which can allow us to identify plasmids and gene orientation. This technology is still expensive and less accurate, but it has been useful in various applications, including mobile laboratories where sequencing can be done in the field.
 
 #### Sanger Sequencing vs NGS
 
 NGS is higher resolution (thousands vs millions of base pairs)  
 NGS can sequence more base pairs per day  (millions vs billions of base pairs)
-NGS is not limited to the laboratory  
+NGS is not limited to the laboratory 
 
 ### Types of Sequencing
 
@@ -138,7 +139,7 @@ Sources:
 
 Sequencing the entirety of the DNA sequence of an organism's genome. WGS data is the most common type of sequencing data analyzed by public health bioinformaticians.
 
-What’s the difference between NGS and whole genome sequencing (WGS)?  
+Sidebar: What’s the difference between NGS and whole genome sequencing (WGS)?  
 
 WGS is the process of sequencing all of an organism’s genetic material i.e. its chromosome and plasmids. Not all sequencing is WGS. For example, using a method commonly referred to as targeted amplicon sequencing (see below), we can use NGS to sequence only specific parts of the genome we’re interested in, such as virulence or antibiotic resistance genes.  
 
@@ -174,7 +175,7 @@ There are many different type of omics:
 
 **Genomics:** The study of all genes in an organism i.e. its genome.  
 
-Genomics is most common omics in public health; Most bioinformatics analyses in public health are focused on the genome.
+Genomics is most common omics in public health; Most bioinformatic analyses in public health are focused on the genome.
 
 **Transcriptomics:** The study of all RNA transcripts in an organism i.e. its transciptome.  
 
@@ -184,7 +185,7 @@ Genomics is most common omics in public health; Most bioinformatics analyses in 
 
 **The meta-omics e.g. metagenomics and metatranscriptomics:** The omic studies described above applied to microbial communities, rather than single species.
 
-Metagenomics is the second most common omics in public health, and metagenomic analyses are becoming more common in public health e.g. wastewater sequencing.
+Metagenomics is the second most common omics in public health, and metagenomic analyses are becoming increasingly common in public health e.g. wastewater sequencing.
 
 ## Working With Sequence Data
 
@@ -199,7 +200,7 @@ BCL or Binary Base Call format is the raw datafile for illumina sequencing that 
 
 Fastq files are files that contain sequence data and quality information. The .gz extension just informs you the file is compressed, to be covered later. It is the format in which sequencing data is most often kept in. The file is structured with each read labeled with '@'. The following line has the sequence bases for that read. The 3rd line has a '+', and the 4th line has the sequence quality (Phred score) for each base encoded in a letter format.
 
-example of two reads:
+Example of two reads:
 ```
 @M03478:141:000000000-C5B4D:1:1101:25956:10945 1:N:0:1
 TTCCGTATTCATGCAACCTATGATGAAAGTATTAGTCGGTTACTCAATGTATTTGAGCGC
@@ -270,7 +271,7 @@ Using the Illumina 1.8+ encoding a seeing an H in the fastq corresponds to a Phr
 
 #### .fasta files
 
-The fasta file format is a method of storing sequence data that has been assembled. The format includes a '>' that contains the sequence label followed by the sequence on the next line(s). The file can contain multiple sequences "multi-fasta" with each sequence starting with a '>'.
+The fasta file format is a method of storing sequence data that has been assembled (which we'll discuss in a later section). The format includes a '>' that contains the sequence label followed by the sequence on the next line(s). The file can contain multiple sequences "multi-fasta" with each sequence starting with a '>'.
 
 example of a couple of lines from the NP and NS segments of an influenza virus:
 ```
@@ -356,13 +357,13 @@ Reads &#8594; Contigs &#8594; Scaffolds &#8594; Chromosomes
 
 Overlapping reads are assembled into contigs, overlapping contigs are assembled in scaffolds, and overlapping scaffolds are assembled into chromosomes.
 
-There are different types of assembly algorithms that assemblers use to reconstruct genomes. These algorithms are not necessary for a basic understanding genome assembly, but you can read more about them [here](https://www.sciencedirect.com/science/article/pii/S0888754310000492).
+There are different types of assembly algorithms that assemblers use to reconstruct genomes. Understanding these algorithms is not necessary for an introduction to genome assembly, but you can read more about them in this [wiki article](https://www.sciencedirect.com/science/article/pii/S0888754310000492).
 
 *De novo* assembly works well for species without a reference genome, as well as species with diverse gene content. *De novo* assembly should be used if you are interested in investigating gene content that is not present in all members of a species.
 
 ## Genomic Relatedness
 
-## Methods for Determining Relatedness
+### Methods for Determining Relatedness
 
 Methods for determining genomic relatedness fall into two major categories: 
 1. Standardized
@@ -373,6 +374,7 @@ Methods for determining genomic relatedness fall into two major categories:
 AKA sequence typing methods, these methods include MLST (multilocus sequence typing), cgMLST (core-genome multilocus sequence typing) and wgMLST (whole-genome multilocus sequence typing), which are all built on the same principle of using a standard set of multiple genes/gene fragments (loci) to characterize isolates. Unique sequences for each locus are assigned allele numbers and isolates are identified based on their allelic profiles
 
 #### MLST
+
 Uses the sequences of ~7 house-keeping gene fragments and is the lowest resolution of the ST methods
 
 Still used to differentiate isolates, but phylogenetic analysis of only MLST loci is less common than it once was due to advances in sequencing and bioinformatics that have allowed for higher resolution analyses
@@ -407,6 +409,7 @@ Disadvantages of standardized/ST methods:
  - Can be low resolution (in the case of MLST)
  
 #### Examples of standardized/ST methods
+
  - PubMLST (>100 organisms have schemes available)
  - Pulsenet and Bionumerics
 
