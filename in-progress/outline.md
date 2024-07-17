@@ -333,8 +333,9 @@ Sources:
  - https://www.researchgate.net/figure/6-Comparison-of-reference-assembly-and-de-novo-assembly-A-Reference-assembly-maps_fig4_321179957
  
 Figures to be included: 
- - Figure of reference guided mapping (reference genome and reads)
- 
+ - Figure of reference guided assembly (reference genome and reads)
+-Oh the Places You'll Go as a  metaphor for reference guided assembly
+
 Reference guided assembly maps reads to a reference genome by identifying reads with similar nucleotides to the reference. A reference genome is a consensus sequence of DNA for an organism.   
 
 This method of genome assembly works well for organisms with a well-characterized reference genome and organisms with highly conserved gene content. 
@@ -346,18 +347,29 @@ Sources:
  - https://thesequencingcenter.com/knowledge-base/de-novo-assembly/
 
 Figures to be included:
--Figure of *de novo* assembly (reads to contigs)
+-Figure of *de novo* assembly (reads to contigs to scaffolds to chromsomes)
+-Oh the Places You'll Go as a  metaphor for de novo assembly
 
 *De novo* is latin for "from the beginning."  It follows that *De novo* assembly is the assembly of sequencing reads without prior knowledge of the correct sequence or order of those reads, and *de novo* assembly does not rely on a reference genome. 
 
 The *de novo* assembly process:
 Reads &#8594; Contigs &#8594; Scaffolds &#8594; Chromosomes
 
-Overlapping reads are assembled into contigs, overlapping contigs are assembled in scaffolds, and overlapping scaffolds are assembled into chromosomes.
+Overlapping reads are assembled into contigs. A contig is a contiguous length of genomic sequence. An assembly with only one contig is considered “complete.” It is not unusual for *de novo* assemblies to have many contigs, especially if short reads are used for assembly. However, an excess of contigs or very short contigs are indicative of a poor quality *de novo* assembly. 
+
+Scaffolds are assembled from joined and oriented contigs.
+
+Whole chromosomes are assembled from joined and oriented scaffolds. 
 
 There are different types of assembly algorithms that assemblers use to reconstruct genomes. Understanding these algorithms is not necessary for an introduction to genome assembly, but you can read more about them in this [wiki article](https://www.sciencedirect.com/science/article/pii/S0888754310000492).
 
 *De novo* assembly works well for species without a reference genome, as well as species with diverse gene content. *De novo* assembly should be used if you are interested in investigating gene content that is not present in all members of a species.
+
+### Which method of genome assembly should you choose?
+
+Whether you should use *de novo* assembly or reference guided assembly depends on the questions you are trying to answer. *De novo* assembly is useful when you are assembling a new genome you have no reference genome for, or when you are interested in analyzing novel gene content your reference genome does not encode. 
+
+Reference guided assembly is useful when you have a well annotated reference genome and the genome you are assembling is not very different from your reference genome.
 
 ## Genomic relatedness
 
@@ -566,7 +578,7 @@ Depending on your routine tasks, your compute infrastructure  may vary in order 
 
 - Discuss the importance of storage solutions in bioinformatics due to the large datasets commonly encountered in genomics and other biological disciplines.
 - Highlight the need for redundancy, backup, and data archiving strategies to ensure data integrity and availability.
-- On-premis vs in the cloud
+- On-premise vs in the cloud
 - Address the challenges associated with transferring large volumes of data in bioinformatics.
 - Discuss the significance of a robust network infrastructure to support data transfer, both internally within the institution/organization and externally with collaborators.
 - Mention the importance of high-speed connections and consider options like dedicated network links or data transfer services for efficient data exchange.
@@ -574,7 +586,331 @@ Depending on your routine tasks, your compute infrastructure  may vary in order 
 ## Public Repositories and Publicly Available Data
 
 ## Data Visualization
- 
+
+### Data visualization with R
+
+#### Intro to R
+https://github.com/AbigailShockey/webinar_materials/tree/main/intro_to_R/scripts
+
+#### Part I: Simple mathematics
+
+R can be used to perform mathematical equations.
+Addition is performed using + :
+
+    2 + 2
+
+Subtraction is performed using - :
+
+    4 - 2
+
+Multiplication can be performed using * :
+
+    2 * 2
+
+Exponents can be calculated using ** or ^:
+
+    2**2
+    2^2
+
+R can also be used for mathematical comparisons.
+Equal to:
+
+    2 == 2
+
+  
+Greater-than/less-than:
+
+    4 > 3
+
+Greater-than or equal to/less-than or equal to:
+
+    4 >= 2
+    
+    2 <= 4
+
+Not equal to:
+
+    3 != 2
+
+When a comparison is true, R returns TRUE, and when a comparison is false,  R returns FALSE. 
+This statement would return FALSE:
+
+    2 > 3
+
+And this statement would return TRUE:
+
+    3 > 2
+
+#### Part II: Variables
+
+Variables are symbolic names used to store information (just like in algebra!).  
+
+Storing a value in a variable allows us to reference it later.
+
+The <- symbol is used to assign variables in R:
+
+    x <- 2
+    x + 2
+
+The result of this equation is 4  
+
+The = sign can also be used to assign variables, but it is considered best practice to use <- :
+
+    x = 2
+    x + 2
+
+The result of this equation is also 4  
+
+Note: when you store a new value in a variable, the old value will be
+overwritten.
+
+There are rules for naming variables. Variable names can include letters, numbers, underscores and periods.  
+
+The following are all valid variable names:
+
+    myvariable <- 1
+    
+    my_variable <- 2
+    
+    my.varaible <- 3
+    
+    my_variable_2 <- 4
+
+Variable names cannot include: spaces, dashes or symbols.  
+
+Variable names cannot start with a number or underscore.  
+
+Using these in variable names would cause an error.
+
+In the examples above, all the variables were assigned numbers, but there are other types of data we can assign to variables.
+
+Next we are going to review four data types you can store in a variable.
+
+1. Character: Characters A-Z and punctuation characters such as ? contained 
+between single or double quotes:
+
+    x <- "I like dogs"
+
+2. Numeric: Real numbers with or without decimals:
+
+    x <- 2
+
+3. Integer: Real numbers without decimals; the L character tells R to store the number as an integer:
+
+    x <- 2L
+
+4. Logical: TRUE/FALSE?:
+
+    x <- TRUE
+
+We can use the class() function to determine what type of data a variable contains:
+
+    x <- "I like dogs"
+    class(x)
+
+Side Note: Functions are blocks of code that perform a specific task, 
+which have been given a name.In this case the function is to determine what the data's class is, and it has been given the name class.  
+
+Information on any given function can be found by placing a ? before the function:
+
+    ?class()
+
+Information can also be found using the Help tab. R has many other useful built-in functions, which we will discuss in later sections.  
+
+The result of an equation can be stored in a variable:
+
+    x <- 1
+    y <- x + 1
+    y
+
+The result of this equation is also 2.
+
+#### Part III: Vectors
+
+Vectors are a type of data structure. They contain a set of values in a specific order. These values can be any of the data types we discussed in Part II.  
+
+This vector contains numerics:
+
+    c(1,2,3)
+
+While this vector contains characters:
+
+    c("A", "B", "C")
+
+Vectors can include a mix of data types. R will store the values in the vector below as strings:
+
+    c("A", 1, 4L)
+
+Vectors can also contain repeats of the same value:
+
+    c("A", "A", "B", "C")
+
+Note: c() is a function that combines values into a vector. The c *must* be lowercase.
+
+The length of a vector corresponds to the number of values in it.
+This vector has a length of 3:
+
+    c(1,2,3)
+
+We can use the length() function to get the length of a vector.
+Using this function confirms this vector has a length = 3:
+
+    length(c(1,2,3))
+
+Like the data types we discussed in Part II, vectors can be assigned to variables:
+
+    my.vector <- c(1, 2, 3)
+
+We can also perform mathematical functions on vectors.
+This equation will add 2 to every value in my.vector:
+
+    2 + my.vector
+
+While this equation will raise 2 to the nth power for very value in the vector:
+
+    2**my.vector
+
+
+Each value in a vector has an index that can be used to reference it.
+Indices are represented by numbers.  
+
+The 1st value in a vector is index 1, the 2nd is index 2, etc. Values in a vector can be retrieved using []:
+
+    my.vector <- c("A", "B", "C")
+    
+    my.vector[1]
+    
+    my.vector[2]
+    
+    my.vector[3]
+
+A colon (:) can be used to retrieve values between two indices:
+
+    my.vector[1:2]
+
+A vector of numbers can also be used to retrieve the values at those indices:
+
+    my.vector[c(1,2)]
+
+The values in a vector can be sorted using sort(). If given numerics, R will sort them in numerical order:
+
+    unsorted.vector <- c(1, 3, 2, 4)
+    sorted.vector <- sort(unsorted.vector)
+    sorted.vector
+
+If given letters, R will sort in alphabetical order based on the first letter
+in each value in the vector:
+
+    unsorted.vector <- c("cat", "B", "aardvark", "D")
+    sorted.vector <- sort(unsorted.vector)
+    sorted.vector
+
+If given letters AND numbers, R will sort the numbers first, then the letters:
+
+    unsorted.vector <- c("1", "400", "4", "100", "A", "C", "B")
+    sorted.vector <- sort(unsorted.vector)
+    sorted.vector
+
+Note: Even though 4 is less than 100, 100 comes before 4 in this sorted vector, because the numbers in this vector are classified as characters.
+
+Vectors can be sorted in reverse order by adding the 'decreasing'
+argument. By default, vectors are sorted in increasing order:
+
+    unsorted.vector <- c(1, 3, 2, 4)
+    sorted.vector <- sort(unsorted.vector, decreasing = T)
+    sorted.vector
+
+Two vectors can be joined by making a vector of vectors:
+
+    vector.A <- c("A","B","C")
+    vector.B <- c("D","E","F")
+    vector.X <- c(vector.A,vector.B)
+    vector.X
+
+Here are several useful functions for dealing with vectors:
+
+    my.vector <- c(1,1,2,3,3,3,4,5)
+
+min() gives us the smallest value of a vector:
+
+    min(my.vector)
+
+max() gives us the largest value of a vector:
+
+    max(my.vector)
+
+mean() gives us the mean of a vector:
+
+    mean(my.vector)
+
+median() gives us the median of a vector:
+
+    median(my.vector)
+
+#### Part IV: Data Frames
+
+Data frames are a list of *equal-length* vectors that represent a table of data with rows and columns. Each column is a vector, and the number of rows is equal to the vector length. Equal length vectors can be assigned to a data frame using the data.frame() function:
+
+    vectorA <- c(1,2,3)
+    vectorB <- c(4,5,6)
+    df <- data.frame(A=vectorA,B=vectorB)
+
+By default, the rows of a data  frame are assigned a number from 1 to n. The $ symbol can be used to reference a specific column in the data frame:
+
+    df$A
+
+We can overwrite any column in the data frame.
+In this case, we are storing values in the data frame, not a new variable:
+
+    df$A <- c(7,8,9)
+    df$A
+    df$A <- df$A * 2
+    df$A
+
+Remember: The new column must be the same length as the original.  
+
+R has several built-in data sets for use. We'll be using the Iris data set for the rest of the tutorial:
+
+    df <- iris
+
+We can use the functions nrow() and ncol() to get the number of rows and  columns in Iris, respectively:
+
+    nrow(df)
+    ncol(df)
+
+We can use the head() function to print the first few lines of Iris:
+
+    head(df) 
+
+A data frame can be written to a file by using the write.table() function:
+
+    write.table(x = df,
+                file = "iris-data.tsv",
+                row.names = FALSE,
+                sep="\t")
+
+Note: Always remember to use unique file names if you're working in the same directory, because R will overwrite any existing file of the same name.  
+
+A data frame is written to your working directory by default. You can use getwd() to determine your current working directory:
+
+    getwd()
+
+A table can be read from a file and stored as a data frame using the 
+read.table() function:
+
+    new.df <- read.delim("iris-data.csv",
+                         header = TRUE, sep = "\t")
+
+A data frame is read from your working directory by default.  
+
+Using the head() command we see that the df and new.df data frames are the same:
+
+    head(new.df)
+
+We can use the summary() function to summarize each column:
+
+    summary(df)
+
 ## General Bioinformatic Terms
 
 Figures to be included: 
