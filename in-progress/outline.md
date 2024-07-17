@@ -177,9 +177,9 @@ Genomics is most common omics in public health; Most bioinformatic analyses in p
 
 **Transcriptomics:** The study of all RNA transcripts in an organism i.e. its transciptome.  
 
-**Proteomics:** The study of all proteins in an organism i.e. its proteome.  
+**Proteomics:** The study of all the proteins in an organism, and their interactions, structure and composition i.e. its proteome.  
 
-**Metabolomics:** The study of small molecules (metabolites) in an organism i.e. its metabolome.   
+**Metabolomics:** The study of small molecules (metabolites) in an organism i.e. its metabolome.     
 
 **The meta-omics e.g. metagenomics and metatranscriptomics:** The omic studies described above applied to microbial communities, rather than single species.
 
@@ -322,6 +322,22 @@ Sequencing data can be moved a number of ways. The most common approach to trans
 * **SCP** or Secure Copy is very similar to SFTP but more primitive. It can only transfer files it cannot do other things like delete files which SFTP can do.
 
 Of all these methods **SFTP** is the most commonly used in Bioinformatics as it provides the most secure environment that allows the safe transfer of data.
+
+## Sequence data quality
+
+The first phase of working with raw sequencing reads is ensuring high quality basecalls. Here the phrase garbage in / garbage out holds true. Fastq files have both the basecalls and the quality or likelihood of a correct basecall. Before using this information, most bioinformatic analysis pipelines will trim the reads where the quality of the basecall drops below a specific threshold (usually around a Phred score of 30).
+
+### Phred quality score
+
+A primary quality metric is the Phred quality score (Q score), which measures the accuracy of base calling. The Phred methodology determines the quality scores for each base by comparing the data generated within tables that were generated from sequence traces where the correct sequence was known, for a specific sequencing platform. For most analyses, a score of Q30 is typically used. This value means that there is less than a 1/1000 probability of an incorrect base
+call at each nucleotide. A number of different programs can be used to examine the Q score. The average Q score for a sequencing run can be found within the Sequence Analysis Viewer in Illumina. When looking at a single sample, the per base sequence quality within [FastQC](https://www.bioinformatics.babraham.ac.uk/projects/fastqc/) will help to visualize the quality score for raw fastq files.
+
+### The problem with low quality bases
+Bioinformatics programs can trim low quality bases, because they mostly occur at the ends of sequences. But why are low quality bases a problem?
+1. Low quality bases affect variant calling and may produce differences between sequences that are not real. This can result in long branches on phylogenetic trees or incorrect clustering of isolates that are epidemiologically linked.
+2. Too few high quality bases also affects genome coverage, because these regions are cut out. This can result in missing important genes, such as those used for determining serotypes, virulence factors, and toxins. Additionally, typing schemes are based on variants. If the depth of coverage is too low because of too much base trimming, variant calling is not supported with a high enough confidence and is not reliable. This results in certain bases or regions of the genome being excluded from comparisons.
+
+There are other quality control measures that can also be used including removing the sequencing adapters from the ends of the reads or removing potentially contaminating sequences.
 
 ## Genome assembly
 
