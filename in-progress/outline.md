@@ -542,7 +542,19 @@ On a small tree, it’s easy for us to give two clades simple and arbitrary name
 3. Utility: The labels in a good naming system can provide information about a clade.
 4. Simplicity: The labels in a good naming system are easy to remember and allow for an increasingly large number of clades to be added to the naming system.
 
+### Phylogenetic tree inference
+
+There are a number of methods for inferring phylogenetic trees. Understanding those methods is not necessary for a basic understanding of bioinformatics, but you can read more about those methods in this [wiki article](https://en.wikipedia.org/wiki/Computational_phylogenetics#Types_of_phylogenetic_trees_and_networks).
+
 ## Genomic epidemiology
+
+Figures to include:
+ - Color-coded mutations plotted on phylogenetic tree
+ - Transmission tree
+
+Genomic epidemiology is the use of pathogen genomic data to determine the distribution and spread of an infectious disease and the application of this information to control public health problems.
+
+Pathogens gain informative mutations during infection. Strains with the same mutations are more closely related. Mutations allow us to group samples into clusters that belong to the same transmission chains.
 
 ## Computer infrastructure for bioinformatics in public health
 
