@@ -27,12 +27,12 @@ Bioinformaticians analyze biological data using computers. The more accurate (bu
  
 ## Sequencing
 
-### Sequencing Technologies
+### Sequencing technologies
 
 Sources:
 - https://www.integra-biosciences.com/united-states/en/blog/article/dna-sequencing-methods-sanger-ngs
 
-#### Sanger Sequencing
+#### Sanger sequencing
 
 Sources: 
 - https://www.sigmaaldrich.com/US/en/technical-documents/protocol/genomics/sequencing/sanger-sequencing
@@ -44,7 +44,7 @@ Figures to be included:
 
 The first generation of sequencing technology. Uses chain termination during DNA replication to determine the DNA sequence. 
 
-#### Next Generation Sequencing (NGS)
+#### Next generation sequencing (NGS)
 
 Sources: 
 - https://www.integra-biosciences.com/united-states/en/blog/article/dna-sequencing-methods-sanger-ngs#Next_generation_sequencing
@@ -53,7 +53,7 @@ AKA "high-throughput" or "massively parallel" sequencing.
 
 NGS is an umbrella term for modern DNA sequencing technologies. NGS sequencing technologies can rapidly sequence DNA in parallel, and they are faster and more cost effective than the first generation of sequencing technologies that preceded them.
 
-#### Short-read Sequencing
+#### Short-read sequencing
 
 Sources:
 - https://www.illumina.com/science/technology/next-generation-sequencing/sequencing-technology.html
@@ -79,7 +79,7 @@ Examples include:
 - IonTorrent
 	- Also uses SBS, but relies on the detection of hydrogen ions that are released during the polymerization of DNA.
 
-#### Long-read Sequencing
+#### Long-read sequencing
 
 Sources:
  - https://www.pacb.com/blog/long-read-sequencing/
@@ -98,7 +98,7 @@ Examples include:
  - Oxford Nanopore
 	 - Uses electrical currents to thread negatively charged DNA through a nanopore. Disruption of the electrical current is used to determine the DNA sequence.
 
-#### Short- vs Long-Read Sequencing
+#### Short- vs long-read sequencing
  
 Specifications and advantages vs disadvantages of each technology
 
@@ -120,13 +120,13 @@ Long-read sequencing:
 
 The Illumina platform has been a workhorse in public health and it’s hard to beat 99.9999% accuracy. However, shorter reads (150 - 300 base pairs) make reconstruction of genome difficult and inaccurate. Longer reads (1,000 - 2 million base pairs or longer) help resolve genome structure, which can allow us to identify plasmids and gene orientation. This technology is still expensive and less accurate, but it has been useful in various applications, including mobile laboratories where sequencing can be done in the field.
 
-#### Sanger Sequencing vs NGS
+#### Sanger sequencing vs NGS
 
 NGS is higher resolution (thousands vs millions of base pairs)  
 NGS can sequence more base pairs per day  (millions vs billions of base pairs)
 NGS is not limited to the laboratory 
 
-### Types of Sequencing
+### Types of sequencing
 
 Sources:
  - https://www.idtdna.com/pages/community/blog/post/let-s-talk-about-sequencing
@@ -135,7 +135,7 @@ Sources:
  - https://geneticeducation.co.in/what-is-targeted-sequencing-and-how-does-it-work/
  - https://geneticeducation.co.in/wp-content/uploads/2023/05/targeted-sequencing-3.001-min.jpeg
 
-#### Whole Genome Sequencing (WGS)
+#### Whole genome sequencing (WGS)
 
 Sequencing the entirety of the DNA sequence of an organism's genome. WGS data is the most common type of sequencing data analyzed by public health bioinformaticians.
 
@@ -145,29 +145,27 @@ WGS is the process of sequencing all of an organism’s genetic material i.e. it
 
 **In summary:** NGS is a technology, WGS is a technique, and we can use NGS to perform WGS.
 
-#### Targeted Sequencing
+#### Targeted sequencing
 
 Sequencing specific area of interest in the genome, such as a gene or coding region. 
 
-#### Whole Exome Sequencing (WES)
+#### Whole exome sequencing
 
 Sequencing only the protein coding genes (exons) of the genome.
 
-#### Amplicon Sequencing
+#### Amplicon sequencing
 
 Sequencing DNA fragments amplified by PCR (AKA amplicons). 
 
-#### Hybridization Capture
+#### Hybridization capture
 
 Sequencing a region of interest captured using long, biotinylated oligonucleotide baits (probes).
 
-## The Omics
+## The omics
 
 Sources:
 - https://be.mit.edu/research-areas/omics 
 - https://www.britannica.com/science/omics
-
-"Omics is the field of research analyzing and intergrating studies of many different -omes, including the genome, proteome, and metabolome, generally using bioinformatics and computational biology."
 
 "The omics sciences share the overarching aim of identifying, describing, and quantifying the biomolecules and molecular processes that contribute to the form and function of cells and tissues."
 
@@ -187,7 +185,7 @@ Genomics is most common omics in public health; Most bioinformatic analyses in p
 
 Metagenomics is the second most common omics in public health, and metagenomic analyses are becoming increasingly common in public health e.g. wastewater sequencing.
 
-## Working With Sequence Data
+## Working with sequence data
 
 After sequencing, there are several types of sequencing files to work with:
 
@@ -325,11 +323,11 @@ Sequencing data can be moved a number of ways. The most common approach to trans
 
 Of all these methods **SFTP** is the most commonly used in Bioinformatics as it provides the most secure environment that allows the safe transfer of data.
 
-## Genome Assembly
+## Genome assembly
 
 Genome assembly is the aligning and merging of DNA sequence data to reconstruct the original sequence. It is an essential part of the bioinformatic analysis process.
 
-### Reference Guided Assembly
+### Reference guided assembly
 
 Sources:
  - https://www.researchgate.net/figure/6-Comparison-of-reference-assembly-and-de-novo-assembly-A-Reference-assembly-maps_fig4_321179957
@@ -342,7 +340,7 @@ Reference guided assembly maps reads to a reference genome by identifying reads 
 This method of genome assembly works well for organisms with a well-characterized reference genome and organisms with highly conserved gene content. 
 
 
-### *De Novo* Assembly
+### *De novo* assembly
 
 Sources:
  - https://thesequencingcenter.com/knowledge-base/de-novo-assembly/
@@ -361,15 +359,15 @@ There are different types of assembly algorithms that assemblers use to reconstr
 
 *De novo* assembly works well for species without a reference genome, as well as species with diverse gene content. *De novo* assembly should be used if you are interested in investigating gene content that is not present in all members of a species.
 
-## Genomic Relatedness
+## Genomic relatedness
 
-### Methods for Determining Relatedness
+### Methods for determining relatedness
 
 Methods for determining genomic relatedness fall into two major categories: 
 1. Standardized
 2. Non-standardized
 
-### Standardized  Methods
+### Standardized  methods
 
 AKA sequence typing methods, these methods include MLST (multilocus sequence typing), cgMLST (core-genome multilocus sequence typing) and wgMLST (whole-genome multilocus sequence typing), which are all built on the same principle of using a standard set of multiple genes/gene fragments (loci) to characterize isolates. Unique sequences for each locus are assigned allele numbers and isolates are identified based on their allelic profiles
 
@@ -397,7 +395,7 @@ Most applicable to single-clone pathogens with closed genomes or to very closely
 
 Highest resolution ST method
 
-#### Advantages and Disadvantages of standardized/ST methods
+#### Advantages and disadvantages of standardized methods
 
 Advantages: 
  - Loci used in ST schemes are readily maintained and shared among laboratories using the same or similar online databases
@@ -408,14 +406,14 @@ Disadvantages of standardized/ST methods:
  - Requires database curation and defined/agreed upon schemes i.e. not all organisms of interest have schemes available
  - Can be low resolution (in the case of MLST)
  
-#### Examples of standardized/ST methods
+#### Examples of standardized methods
 
  - PubMLST (>100 organisms have schemes available)
  - Pulsenet and Bionumerics
 
 ### Non-standardized methods
 
-These methods include core-genome and SNP analyses
+These methods include core-genome and SNP analyses.
 
 #### SNP analysis
 
@@ -455,7 +453,8 @@ Disadvantages:
 First we’ll start by defining the word ‘phylogenetic.’ The prefix ‘phylo’ refers to a group of organisms, and ‘genetic’ refers to genes and a common origin. It follows that ‘phylogenetic’ refers to examining
 the common origin (i.e. the relatedness) of a group of organisms using their genetic data. 
 
-### Understanding Phylogenetic Trees
+### Understanding phylogenetic trees
+
 Figures to be included:
  - Dendrogram and circular phylogenetic tree
  - Phylogenetic trees that are identical, but have isolates rotated at TMRCA
@@ -466,15 +465,28 @@ The very edge of a phylogenetic tree is where we see the organism’s name (whet
 
 A common misconception in interpreting phylogenetic trees is that isolates are closely related because they are vertically close to one another on the tree. However, the vertical placement of isolates can be changed by rotating a clade at a particular node. This can take isolates that are vertically close to each other and place them distant from one another. When we read phylogenetic trees, we should look horizontally across the tree and identify nodes that are the common ancestor of a clade.
 
-### Evolving Phylogenetic Trees
+### Evolving phylogenetic trees
+
 Figures to be included:
- - Dendrogram and circular phylogenetic tree
+ - Sequential outbreak phylogenetic trees
 
-## Genomic Epidemiology
+Have you ever looked at a phylogenetic tree at the start of an outbreak and seen two isolates that look like they might be related, but by the end of an outbreak they are on two different branches and now appear
+unrelated? Which tree is correct? The short answer is both trees are correct!
 
-## Infrastructure
+The addition of isolates that are related will cause new clades to appear and develop. This does not mean that the original isolates were not related or that the original tree clustered the isolates incorrectly, but that there are other isolates more closely related that were added to the analysis.
 
-## Computer Infrastructure for Bioinformatics in Public Health
+### Bootstrapping time - let’s add statistics to our phylogenetic trees
+
+Figures to be included:
+ - Phylogenetic tree with bootstraps for every node on the tree
+
+When looking at a phylogenetic tree, how can we be confident in a cluster that is present? Through the use of bootstrap statistics, we can calculate a statistical percentage of how well the placement of each branch on the tree is supported. 
+
+Bootstrapping is performed by random resampling of aligned sequence data. The percentage is then calculated to reflect the percentage of times the resampled alignment cluster the isolates together on the tree. A boostrap value is calculated for every node on the tree.
+
+## Genomic epidemiology
+
+## Computer infrastructure for bioinformatics in public health
 
 Efficient and well-designed computer infrastructure is essential for conducting bioinformatics analyses effectively. This webinar will outline a few basic concepts, considerations to think about, and useful resources when developing computer infrastructure for bioinformatics in public health.
 
@@ -492,7 +504,7 @@ Here a few key questions and considerations:
 
 It is important to consider your organization's use cases for bioinformatics and available compute infrastructure. The answers to the above questions will help guide your bioinformatics data infrastructure development plan.
 
-### General Overview of Compute Infrastructure
+### General overview of computing infrastructure
 
 #### Operating systems:
 
@@ -520,17 +532,17 @@ Depending on your routine tasks, your compute infrastructure  may vary in order 
 
 ### Approaches to acquiring/accessing bioinformatics Infrastructure
 
-#### Linux Workstation:
+#### Linux workstation:
 
 - Pros: Offers flexibility, control, and customization opportunities for individual researchers or small teams. Can be cost-effective for small-scale analyses.
 - Cons: Limited scalability, potential hardware maintenance, and potential challenges in resource sharing and collaboration.
 
-#### High-Performance Computing (HPC) - On Premise:
+#### High-performance computing (HPC) - On premise:
 
 - Pros: Provides high computing power, dedicated infrastructure, and local data storage. Enables parallel processing and large-scale analyses.
 - Cons: Associated costs for hardware, maintenance responsibilities, and limited scalability beyond the available infrastructure.
 
-#### Cloud Computing:
+#### Cloud computing:
 
 - Pros: Offers tailored computing resources based on demand, unlimited scalability, ease of reproducibility, and cost efficiency. Provides control over the compute environment without the need for purchasing and maintaining hardware.
 - Cons: Ongoing costs, data transfer considerations, and potential privacy concerns.
@@ -544,11 +556,6 @@ Depending on your routine tasks, your compute infrastructure  may vary in order 
 - Address the challenges associated with transferring large volumes of data in bioinformatics.
 - Discuss the significance of a robust network infrastructure to support data transfer, both internally within the institution/organization and externally with collaborators.
 - Mention the importance of high-speed connections and consider options like dedicated network links or data transfer services for efficient data exchange.
-
-### Conclusion
-
-- Highlight the need for assessing needs and capabilities, considering hardware and software requirements, and selecting the appropriate infrastructure approach.
-- Encourage the audience to explore further resources and consult experts in bioinformatics infrastructure to make informed decisions.
 
 ## Public Repositories and Publicly Available Data
 
