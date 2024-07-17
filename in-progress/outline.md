@@ -391,6 +391,9 @@ Reference guided assembly is useful when you have a well annotated reference gen
 
 ### Methods for determining relatedness
 
+Figures to be included:
+ - Allele vs locus
+
 Methods for determining genomic relatedness fall into two major categories: 
 1. Standardized
 2. Non-standardized
@@ -401,6 +404,9 @@ AKA sequence typing methods, these methods include MLST (multilocus sequence typ
 
 #### MLST
 
+Figures to be included:
+ - MLST allele comparison
+ 
 Uses the sequences of ~7 house-keeping gene fragments and is the lowest resolution of the ST methods
 
 Still used to differentiate isolates, but phylogenetic analysis of only MLST loci is less common than it once was due to advances in sequencing and bioinformatics that have allowed for higher resolution analyses
@@ -436,6 +442,10 @@ Disadvantages of standardized/ST methods:
  
 #### Examples of standardized methods
 
+Figures to be included:
+ - Screenshot of PubMLST
+ 
+ Examples:
  - PubMLST (>100 organisms have schemes available)
  - Pulsenet and Bionumerics
 
@@ -445,6 +455,9 @@ These methods include core-genome and SNP analyses.
 
 #### SNP analysis
 
+Figures to be included:
+ - SNP example
+ 
 Identifies single nucleotide differences between isolates and a single reference genome
 
 Very high resolution (based on SNPs)
@@ -513,6 +526,9 @@ When looking at a phylogenetic tree, how can we be confident in a cluster that i
 Bootstrapping is performed by random resampling of aligned sequence data. The percentage is then calculated to reflect the percentage of times the resampled alignment cluster the isolates together on the tree. A bootstrap value is calculated for every node on the tree.
 
 ### Classification by clades
+
+Figures to be included:
+ - Phylogenetic tree with clades colored and labelled
 
 Classifying pathogen diversity below the species level is often done by examining where isolates are found on a phylogenetic tree. More specifically, pathogens can be classified by the clades they belong to on a phylogenetic tree. As a reminder, a clade is a group of organisms composed of a common ancestor and its descendants.
 
@@ -943,6 +959,8 @@ We can use the summary() function to summarize each column:
 
 #### Making figures with ggplot2
 https://github.com/AbigailShockey/webinar_materials/tree/main/figures_with_ggplot2
+
+https://youtube.com/playlist?list=PL-m0WlmGhvoDlJXhy6zGmCatvn5qXPXX9&si=q2TPG_n_fX7h98B-
 
 #### Making figures with ggplot2 part I: ggplot2 basics
 Making figures with ggplot2 part I: ggplot2 basics  
@@ -1879,6 +1897,7 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 * **Bootstrapping** – Bootstrapping is a statistical resampling technique that is often used to increase the confidence that the inferred tree is correct.
 
 * **Outgroups** – When using distance matrix methods, it is highly recommended to include at least one distantly related sequence for the analysis. This is a negative control. The outgroup should appear near the root of the tree and should have a longer branch length than any other sequence.
+
 Bootstrap values: statistical analysis to estimate the error in sampling, allows for approximating the distribution through resampling the data set. The bootstrapping value provides the confidence values for the phylogenetic relationships
 
 * **Cladogram** – A diagram, also referred to as phylogenetic tree, that shows relationship between organisms and are not evolutionary in nature
@@ -1888,12 +1907,17 @@ Bootstrap values: statistical analysis to estimate the error in sampling, allows
 * **Rooted VS. unrooted trees** – a rooted tree will have an outgroup or a unique node that will be designated as the most recent common ancestor for all of the other nodes in the tree, while an unrooted tree will only show relatedness of the strains
 
 * **Nodes** – can be either the external nodes which represent the sequences or taxa or internal nodes which are hypothetical sequences representative of a common ancestor
+
 * **Branch length** – the branch length is indicative of the amount of genetic change that has occurred, most branch lengths are drawn to scale by using the number of nucleotide substitutions per site  
 
 * **Character based** – use the sequence alignments directly to generate trees
+
   * **Maximum parsimony (MP)** – This method tries to create a phylogeny that requires the least evolutionary change, builds a phylogenetic tree based on the smallest number of evolutionary changes, this method will compare a number of trees and choose the one with the lease number of evolutionary steps
+ 
   * **Maximum-likelihood (ML)** – ML uses a statistical approach to infer a phylogenetic tree. ML is well suited for the analysis of distantly related sequences but is computationally expensive and thus not that well suited for larger input data, phylogenetic tree will be built based on a specific model specified, it will take into account the statistical likelihood of one sequence being converted into another
 
 * **Distance-based** – transform the sequence alignments into distance matrixes  
+
   * **Neighbor-Joining method** – a distance based method that chooses the closest neighbor, does not assume that all taxa are equidistant from the root
+  
   * **UPGMA (Unweighted Pair Group Method with Arithmetic Mean)** – A simple clustering method that assumes a constant rate of evolution (molecular clock hypothesis). It needs a distance matrix of the analyzed taxa that can be calculated from a multiple alignment, this method will build phylogenetic trees based off of a distance matrix, it will assume to start building the tree by clustering the two most related taxa and then sequentially add the next related taxa to the tree
