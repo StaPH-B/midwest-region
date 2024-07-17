@@ -449,11 +449,108 @@ Disadvantages:
  - Dryad
  - MycoSNP
 
-## Infrastructure
+## Phylogenetics
 
-## Public Repositories and Publicly Available Data
+### What's in a name?
+First we’ll start by defining the word ‘phylogenetic.’ The prefix ‘phylo’ refers to a group of organisms, and ‘genetic’ refers to genes and a common origin. It follows that ‘phylogenetic’ refers to examining
+the common origin (i.e. the relatedness) of a group of organisms using their genetic data. 
+
+### Understanding Phylogenetic Trees
+Figures to be included:
+ - Dendrogram and circular phylogenetic tree
+ - Phylogenetic trees that are identical, but have isolates rotated at TMRCA
+
+Phylogenetic trees are branching diagrams that allow us to visualize the results of phylogenetic analyses and determine the relatedness of organisms. When we look at a phylogenetic tree, there are a few common terms we can use to describe it:
+
+The very edge of a phylogenetic tree is where we see the organism’s name (whether it’s the sample name or the name of a species) which is called the **leaf**. These leaves are connected to each other by **branches**. Two branches connect back to a **node**, which is a common ancestor of the leaf. The node is a hypothetical organism that may not exist in nature. As we go further back on the tree, we start to see more isolates are connected and descend from a common ancestor. Clusters of isolates from a recent ancestor make up a **clade**.
+
+A common misconception in interpreting phylogenetic trees is that isolates are closely related because they are vertically close to one another on the tree. However, the vertical placement of isolates can be changed by rotating a clade at a particular node. This can take isolates that are vertically close to each other and place them distant from one another. When we read phylogenetic trees, we should look horizontally across the tree and identify nodes that are the common ancestor of a clade.
+
+### Evolving Phylogenetic Trees
+Figures to be included:
+ - Dendrogram and circular phylogenetic tree
 
 ## Genomic Epidemiology
+
+## Infrastructure
+
+## Computer Infrastructure for Bioinformatics in Public Health
+
+Efficient and well-designed computer infrastructure is essential for conducting bioinformatics analyses effectively. This webinar will outline a few basic concepts, considerations to think about, and useful resources when developing computer infrastructure for bioinformatics in public health.
+
+### Assessing needs and capabilities of your organization
+
+It is important to conduct a thorough assessment of your organization's needs and capabilities before investing in bioinformatics infrastructure.
+
+Here a few key questions and considerations:
+- How much data will you be processing? What are the projected data volumes? For example, are you dealing with hundreds or thousands of samples?
+- What types of analyses will you perform? Examples include variant calling, antimicrobial gene detection, phylogenetic analyses, or metagenomic profiling.
+- What does your current set up look like? Assess the existing computer infrastructure at your institution/organization, including available hardware, software, and network capabilities.
+- Who is part of your bioinformatics teams? Determine the number of users and their data access requirements. 
+- What bioinformatics experience does your team have? Will you be developing pipelines and/or using readily available softwares?
+- What barriers or limitation will you encounter when developing bioinformatics data infrastructure. Identify potential barriers or challenges, such as limited IT support or budget constraints.
+
+It is important to consider your organization's use cases for bioinformatics and available compute infrastructure. The answers to the above questions will help guide your bioinformatics data infrastructure development plan.
+
+### General Overview of Compute Infrastructure
+
+#### Operating systems:
+
+- Linux distributions (e.g., Ubuntu, CentOS) are commonly used due to their stability, compatibility with bioinformatics software, and extensive community support.
+- Windows OS 
+- Mac OS
+
+#### Hardware requirements:
+
+- Processors: Aim for at least 32 cores to handle parallel processing efficiently.
+- RAM: 128 GB is a suitable starting point, but larger datasets may require more memory.
+- Storage: Consider a combination of fast local storage for temporary data and network-attached storage (NAS) or storage area network (SAN) for long-term data storage.
+
+*Reference the article "A Practical Guide to Building Computational Infrastructure for Synthetic Biology" for more detailed information.*
+
+### Example of bioinformatics practices
+
+#### Routine tasks common in public health labs:
+
+- Processing viral sequences: This task typically involves quality control, read mapping, and variant calling, and can take several hours to days depending on the dataset size and computational resources.
+- Bacterial processing: Analyzing bacterial genomic data may include assembly, annotation, and comparative genomics, which can take from hours to weeks depending on the complexity of the analysis and the available computational power.
+- Post run processing for samples: Analyze relatedness of samples and or prepare a phylogenetic analysis for a number of samples.
+
+Depending on your routine tasks, your compute infrastructure  may vary in order to meet the needs your organizations processing requirements.
+
+### Approaches to acquiring/accessing bioinformatics Infrastructure
+
+#### Linux Workstation:
+
+- Pros: Offers flexibility, control, and customization opportunities for individual researchers or small teams. Can be cost-effective for small-scale analyses.
+- Cons: Limited scalability, potential hardware maintenance, and potential challenges in resource sharing and collaboration.
+
+#### High-Performance Computing (HPC) - On Premise:
+
+- Pros: Provides high computing power, dedicated infrastructure, and local data storage. Enables parallel processing and large-scale analyses.
+- Cons: Associated costs for hardware, maintenance responsibilities, and limited scalability beyond the available infrastructure.
+
+#### Cloud Computing:
+
+- Pros: Offers tailored computing resources based on demand, unlimited scalability, ease of reproducibility, and cost efficiency. Provides control over the compute environment without the need for purchasing and maintaining hardware.
+- Cons: Ongoing costs, data transfer considerations, and potential privacy concerns.
+- Specific platforms like Terra.bio, AWS, and GCP are examples of cloud-based bioinformatics tools and infrastructure.
+
+### Data storage and transfer
+
+- Discuss the importance of storage solutions in bioinformatics due to the large datasets commonly encountered in genomics and other biological disciplines.
+- Highlight the need for redundancy, backup, and data archiving strategies to ensure data integrity and availability.
+- On-premis vs in the cloud
+- Address the challenges associated with transferring large volumes of data in bioinformatics.
+- Discuss the significance of a robust network infrastructure to support data transfer, both internally within the institution/organization and externally with collaborators.
+- Mention the importance of high-speed connections and consider options like dedicated network links or data transfer services for efficient data exchange.
+
+### Conclusion
+
+- Highlight the need for assessing needs and capabilities, considering hardware and software requirements, and selecting the appropriate infrastructure approach.
+- Encourage the audience to explore further resources and consult experts in bioinformatics infrastructure to make informed decisions.
+
+## Public Repositories and Publicly Available Data
 
 ## Data Visualization
  
