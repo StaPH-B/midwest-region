@@ -482,7 +482,21 @@ Figures to be included:
 
 When looking at a phylogenetic tree, how can we be confident in a cluster that is present? Through the use of bootstrap statistics, we can calculate a statistical percentage of how well the placement of each branch on the tree is supported. 
 
-Bootstrapping is performed by random resampling of aligned sequence data. The percentage is then calculated to reflect the percentage of times the resampled alignment cluster the isolates together on the tree. A boostrap value is calculated for every node on the tree.
+Bootstrapping is performed by random resampling of aligned sequence data. The percentage is then calculated to reflect the percentage of times the resampled alignment cluster the isolates together on the tree. A bootstrap value is calculated for every node on the tree.
+
+### Classification by clades
+
+Classifying pathogen diversity below the species level is often done by examining where isolates are found on a phylogenetic tree. More specifically, pathogens can be classified by the clades they belong to on a phylogenetic tree. As a reminder, a clade is a group of organisms composed of a common ancestor and its descendants.
+
+Grouping isolates into clades and naming those clades in a standardized way allows us to identify links between outbreaks that are closely related but circulating in different locations.
+
+### Naming clades
+
+On a small tree, it’s easy for us to give two clades simple and arbitrary names, but what about a larger tree with thousands of isolates and hundreds of potential clades? A more dynamic and robust naming system is needed to classify the sequences. Some key features of a good naming system are:
+1. Diversity: A good naming system accounts for the global diversity of a pathogen and can be used to differentiate between clades found at a significant frequency with broad geographic spread.
+2. Flexibility: A good naming system can accommodate genetic diversity as it emerges and allows new clades to be added to the naming system if they rise to an appreciable frequency.
+3. Utility: The labels in a good naming system can provide information about a clade.
+4. Simplicity: The labels in a good naming system are easy to remember and allow for an increasingly large number of clades to be added to the naming system.
 
 ## Genomic epidemiology
 
