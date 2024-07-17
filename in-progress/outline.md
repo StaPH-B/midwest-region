@@ -590,9 +590,9 @@ Depending on your routine tasks, your compute infrastructure  may vary in order 
 ### Data visualization with R
 
 #### Intro to R
-https://github.com/AbigailShockey/webinar_materials/tree/main/intro_to_R/scripts
+https://github.com/AbigailShockey/webinar_materials/tree/main/intro_to_R/
 
-#### Part I: Simple mathematics
+#### Intro to R Part I: Simple mathematics
 
 R can be used to perform mathematical equations.
 Addition is performed using + :
@@ -641,7 +641,7 @@ And this statement would return TRUE:
 
     3 > 2
 
-#### Part II: Variables
+#### Intro to R Part II: Variables
 
 Variables are symbolic names used to store information (just like in algebra!).  
 
@@ -725,7 +725,7 @@ The result of an equation can be stored in a variable:
 
 The result of this equation is also 2.
 
-#### Part III: Vectors
+#### Intro to R Part III: Vectors
 
 Vectors are a type of data structure. They contain a set of values in a specific order. These values can be any of the data types we discussed in Part II.  
 
@@ -847,7 +847,7 @@ median() gives us the median of a vector:
 
     median(my.vector)
 
-#### Part IV: Data Frames
+#### Intro to R Part IV: Data frames
 
 Data frames are a list of *equal-length* vectors that represent a table of data with rows and columns. Each column is a vector, and the number of rows is equal to the vector length. Equal length vectors can be assigned to a data frame using the data.frame() function:
 
@@ -910,6 +910,804 @@ Using the head() command we see that the df and new.df data frames are the same:
 We can use the summary() function to summarize each column:
 
     summary(df)
+
+#### Making figures with ggplot2
+https://github.com/AbigailShockey/webinar_materials/tree/main/figures_with_ggplot2
+
+#### Making figures with ggplot2 part I: ggplot2 basics
+Making figures with ggplot2 part I: ggplot2 basics  
+
+A. What is ggplot2?
+
+https://ggplot2.tidyverse.org/  
+
+"ggplot2 is a system for declaratively creating graphics, based on The Grammar of Graphics."  
+
+The "grammar of graphics" is a system for describing the individual components that make up the figure or graphic we are visualizing.  
+
+https://link.springer.com/book/10.1007/0-387-28695-0  
+
+ggplot2 allows you to build a plot layer by layer.
+
+In this section, we will go over the geom and aes layers. We will review layers that allow for further customization in later sections.  
+
+For our example data, we will be using a table from the output of the
+genome assembly QC program QUAST.  
+
+First we will read in our table, store it as a variable, and view it:
+
+    df <- read.delim("./data/quast_data.tsv", 
+                     header = T, 
+                     check.names = F,
+                     stringsAsFactors = F,
+                     sep = "\t")
+    
+    View(df)
+
+ggplot() is the function for creating a new plot using ggplot2.  
+
+As a reminder, we can use library() to load the package and ? to view its  documentation in the Help tab:
+
+    library(ggplot2)
+    ?ggplot2
+
+Notice that using the ggplot() without a geom or aes results in a blank plot:
+
+    ggplot(df)
+
+B. Geometric objects aka geoms  
+
+geoms specify what type of graph we are plotting e.g. line, bar, scatter, etc.  
+
+You can use the help function to search for the different types of geoms available in ggplot2, or you can using the search bar in the help tab:
+
+    help.search("geom_", package = "ggplot2")
+
+C. Aesthetic mapping aka aes()
+
+We use aes() to map variables to visual properties such as position (x, y),  color, shape, and size.  
+
+Remember: aes() is a layer we add to our plot with our geom layer
+We do this by placing aes() within the ggplot function.  
+
+For example, plotting Largest Contig vs Total Length without a geom layer gives us an x- and y-axis, but no data on the graph:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`))
+
+We gave ggplot() the table and position of the data, but no geom.  
+
+Adding geom_point() to our graph of Largest Contig vs Total Length will  plot a scatter plot of those data:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_point()
+
+To plot those data as a line, we use geom_line():  
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line()
+
+And if we wanted to include dots and lines, we use both geom functions:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() + 
+      geom_point()
+
+We can change the appearance, or aesthetic, of our plot by adding more parameters to aes().  
+
+The properties we can change using aes() include things like:  
+ - shape
+ - size
+ - color (outside color)
+ - fill (inside color)
+ - line type  
+
+If we want to make a uniform change, we make that change outside of aes().  
+
+For example, to change the color, size and shape of the points in our plot:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_point(size=3, shape=17, color="blue")
+
+We can do the same for our line plot and change its color and linetype:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_point(size=3, shape=17, color="blue") +
+      geom_line(size=2, linetype="dashed", color="purple")
+
+Note: the numbers associated with point shapes and line types can be viewed with the following ggpubr commands:
+
+    library(ggpubr)
+    show_point_shapes()
+    show_line_types()
+
+If we want to map an aesthetic change to a variable, we make that change  inside of aes().  
+
+For example, to change the shape and color of the points in our  scatter plot based on AMR profile:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_point(aes(shape=AMR))
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_point(aes(color=AMR))
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_point(aes(color=AMR, shape=Species))
+
+We will discuss how to customize these figures further in a later section.
+
+#### Making figures with ggplot2 part II: More geoms and different types of graphs
+
+In this section we will go over more geoms and continue learning how to plot different types of graphs using ggplot2.
+
+For our example data, we will be using the same assembly QC table from the previous section:
+
+    df <- read.delim("./data/quast_data.tsv", 
+                     header=T, 
+                     check.names=F,
+                     stringsAsFactors=F,
+                     sep="\t")
+
+A. Histograms
+
+To plot a histogram, we use the geom geom_histogram(). We will start by plotting a histogram of N50:
+
+    library(ggplot2)
+    
+    ggplot(df, aes(x=N50)) + 
+      geom_histogram()
+
+Notice that R prints the message:
+"`stat_bin()` using `bins=30`. Pick better value with `binwidth`."
+
+Additionally, our histogram is spread thin. We can change the amount of bins using the bin parameter:
+
+    ggplot(df, aes(x=N50)) + 
+      geom_histogram(bins=10)
+
+We can change the color of our histogram using what we learned about aes() in the previous section:
+
+    ggplot(df, aes(x=N50)) + 
+      geom_histogram(bins=10, color="black", fill="lightgreen")
+
+We can color our histogram by a specific variable using aes() and color or fill. 
+
+For example, coloring our N50 histogram by Species:
+
+    ggplot(df, aes(x=N50, fill=Species)) +   geom_histogram(bins=10)
+
+We can change the position of the histogram's bars using the parameter position. Values for the parameter position are “identity”, “stack”, and “dodge”:
+
+    ggplot(df, aes(x=N50, fill=Species)) +
+      geom_histogram(bins=10, position="dodge")
+
+ggplot also has the ability to add a line at the mean or median of our 
+histogram with geom_vline():
+
+    ggplot(df, aes(x=`Largest contig`)) +
+      geom_histogram(bins=10) +
+      geom_vline(aes(xintercept=median(`Largest contig`)), linetype="dashed", size=1)
+
+B. Barplots
+
+To plot a barplot, we use the geom geom_bar(). We will start by plotting the counts for each Species in the data set:
+
+    ggplot(df, aes(x=Species)) + 
+      geom_bar(stat="count")
+
+Note: "count" is what we use to tell ggplot we want to graph counts of a particular variable.
+
+coord_flip() can be used to plot the bars horizontally instead of vertically:
+
+    ggplot(df, aes(x=Species)) + 
+      geom_bar(stat="count") +    
+      coord_flip()
+
+color, fill, and aes() can be used to color and fill the bars:
+
+    ggplot(df, aes(x=Species, color=Species, fill=Species)) +
+      geom_bar(stat="count")
+    
+    ggplot(df, aes(x=Species, fill=Species)) +
+      geom_bar(stat="count", color="black")
+
+Multiple variables can be used in the barplot. For example, plotting the
+the AMR counts and coloring the bars by species
+
+    ggplot(df, aes(x=AMR, fill=Species, color=Species)) + 
+      geom_bar(stat="count")
+
+C. Box Plots
+
+To plot a box plot, we use the geom geom_boxplot(). We will start by plotting a basic box plot of Species vs Total length:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot()
+
+Outliers in our data can sometimes make it difficult to see box plots as is, but we can remove them using the outliers parameter:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F)
+
+There are also options for changing the appearance of outliers.
+Those options include outlier.color, outlier.shape, outlier.size, etc:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outlier.color="blue", outlier.shape=15, outlier.size=3, alpha = .5)
+    
+    ?geom_boxplot
+
+We can use coord_flip() to horizontally plot the the boxes:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + 
+      coord_flip() 
+
+Like geom_vline(), geom_hline() can be used to plot a horizontal line:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + 
+      geom_hline(aes(yintercept=mean(`Total length`)), linetype="dashed")
+
+Coloring our box plot by Species is the same as in previous examples:
+
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black")
+    
+    ggplot(df, aes(x=Species, y=`Total length`, color=Species)) + 
+      geom_boxplot()
+
+#### Making figures with ggplot2 part III: Axes and labels
+
+In this section, we will review how to customize the axes and labels of your figures using ggplot2.  
+
+For our example data, we will be using the same assembly QC table from the previous section:
+
+    df <- read.delim("./data/quast_data.tsv", 
+                     header = T, 
+                     check.names = F,
+                     stringsAsFactors = F,
+                     sep = "\t")
+
+A. Axes and titles
+
+You may have noticed that ggplot2 labels the x and y axis using their
+respective column names. Additionally, the plot has no title:
+
+    library(ggplot2)
+    
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F)
+
+We can change those defaults using the xlab() and ylab() functions:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) +
+      xlab("Assembly Species") +
+      ylab("Assembly Length (bp)")
+
+Alternatively, we can use the labs() function
+
+    ggplot(df, aes(x=Species, y=`Total length`)) +    geom_boxplot(outliers=F) +   labs(x="Assembly Species",
+           y="Assembly Length (bp)",
+           title="Species Assembly Lengths")
+
+ggplot2 also automatically chooses the limit, scale, and labels of an axis, but we can change those defaults as well.  
+
+The xlim() and ylim() functions can be used to change the limit of an axis.  
+
+1119861 is the highest x value and 12380070 is the highest y value of our line graph, so we'll choose values close to those as our x and y max. Our x and y min will be 0:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line()
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() + 
+      xlim(0,1120000) +
+      ylim(0,12400000)
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() + 
+      xlim(-1000000,1120000) +
+      ylim(0,20000000)
+
+To change the scale of an axis, we can use the scale_x and scale_y functions, which there are many to choose from
+
+    help.search("scale_x", package = "ggplot2")
+
+The functions for discrete variables include the word "discrete" and the  functions for  continuous variables include the word "continuous."  
+
+The limits, breaks, labels, and names of each axis can be set with those parameters:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() +
+      scale_x_continuous(limits=c(280000,1120000),
+                         breaks=c(280000,560000,840000,1120000),
+                         labels=c(280000,560000,840000,1120000),
+                         name="Largest Contig (bp)") +
+      scale_y_continuous(limits=c(3100000,12400000),
+                         breaks=c(3100000,6200000,9300000,12400000),
+                         labels=c(3100000,6200000,9300000,12400000),
+                         name="Assembly Length (bp)") 
+
+Instead of manually typing out the axis scale, we can use the seq.int() 
+function to create it and store it in a variable:
+
+    xmin <- 280000
+    xmax <- 1120000
+    x_scale <- seq.int(280000, 1120000, by = (xmax/4))
+    
+    ymin <- 3100000
+    ymax <- 12400000
+    y_scale <- seq.int(3100000, 12400000, by = (ymax/4)) 
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() +
+      scale_x_continuous(limits=c(xmin,xmax),
+                         breaks=x_scale,
+                         labels=x_scale,
+                         name="Largest Contig (bp)") +
+      scale_y_continuous(limits=c(ymin,ymax),
+                         breaks=y_scale,
+                         labels=y_scale,
+                         name="Assembly Length (bp)") 
+
+There are many other functions we can use to transform our continous axes.  
+
+For example, we can reverse our axes:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() +
+      scale_x_reverse() +
+      scale_y_reverse() 
+
+Or we can log transform them:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() +
+      scale_x_log10() +
+      scale_y_log10() 
+
+We can also log transfom axes using the scale_x/y_continuous trans parameter:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`)) + 
+      geom_line() +
+      scale_x_continuous(trans="log2") +
+      scale_y_continuous(trans="log2")
+
+As a reminder, you can view the other axis scale functions using the help function:
+
+    help.search("scale_x", package = "ggplot2")
+
+Scaling discrete axes is slightly different, but uses the same parameters
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) 
+
+To change the name of the axis, tick marks, and order:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) +
+      scale_x_discrete(breaks=c("Acinetobacter baumannii","Klebsiella pneumoniae"),
+                       limits=c("Klebsiella pneumoniae","Acinetobacter baumannii"),
+                       labels=c("A. baumannii","K. pneumoniae"),
+                       name="Assembly Species")
+
+To choose which variables to display:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) +
+      scale_x_discrete(limits=c("Acinetobacter baumannii"),
+                       labels=c("A. baumannii"),
+                       name="Assembly Species")
+                       
+#### Making figures with ggplot2 part IV: Themes and legends
+
+In this section, we will go over even more ways to customize you figures, as well as their legends, using ggplot2's theme() function.  
+
+For our example data, we will be using the same assembly QC table from the previous section:
+
+    df <- read.delim("./data/quast_data.tsv", 
+                     header=T, 
+                     check.names=F,
+                     stringsAsFactors=F,
+                     sep="\t")
+
+A. Built-in themes
+
+ggplot2 has a number of built-in themes you can choose from for your figures. As you may have noticed, the default has a grey background and white  gridlines.
+
+You can use the help function to search for the different types of themes available in ggplot2, or you can using the search bar in the help tab:
+
+help.search("theme_grey", package="ggplot2")
+
+We'll use the box plot from the last section to go over some of these 
+built-in themes.
+
+The classic dark-on-light ggplot2 theme:
+
+    library(ggplot2)
+    
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_bw()
+
+A theme with only black lines of various widths on white backgrounds:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_linedraw()
+
+A theme similar to theme_linedraw() but with light grey lines and axes:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_light()
+
+The dark cousin of theme_light(), with similar line sizes but a dark 
+background:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_dark()
+
+A minimalist theme with no background annotations:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_minimal()
+
+A classic-looking theme, with x and y axis lines and no gridlines:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_classic()
+
+A completely empty theme:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_void()
+
+You can also install packages with other built-in themes
+For example, one of my favorite themes is Dracula:
+
+    library(ggDracula)
+    
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(outliers=F) +
+      theme_dracula()
+
+You can change basic elements of these themes using the base_size, base_family, base_line_size, and base_rect_size parameters:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + theme_bw()
+    
+    base_size <- 17
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + 
+      theme_bw(base_size=base_size,
+               base_family="serif",
+               base_line_size=base_size/22,
+               base_rect_size=base_size/22)
+
+Note: windowsFonts() can tell you the fonts available for you to choose from.  
+
+There are other packages to increase the number of fonts to choose from e.g. extraFonts:
+
+    windowsFonts()
+
+
+B. Manually customizing plots with theme()
+
+You can manually customize almost every non-data element of your plot using the theme() function. These elements include:
+
+Line elements : axis lines, grid lines, plot panel border, etc.
+
+    element_line() 
+
+Text elements : plot title, axis titles, tick mark labels, legend title, etc.
+
+    element_text() 
+
+Rectangle elements : plot background, panel background, legend background, etc.
+
+    element_rect()
+
+These functions are used in concert with the theme() function to manually change the plot elements:
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) +
+      theme(panel.background=element_rect(fill="white",
+                                          colour="purple",
+                                          linewidth=1,
+                                          linetype="solid"),
+            panel.grid.major=element_line(linewidth=0.9,
+                                          linetype="dashed",
+                                          colour="blue"),
+            panel.grid.minor=element_line(linewidth=0.7,
+                                          linetype="dashed",
+                                          colour="blue")) 
+
+Alternatively, to remove these elements, we can use element_blank():
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) +
+      theme(panel.border=element_blank(),
+            panel.grid.major=element_blank(),
+            panel.grid.minor=element_blank())
+
+Axes can also be formatted using theme() and element_text():
+
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + 
+      scale_x_discrete(labels=c("A. baumannii","K. pneumoniae")) +
+      labs(x="Assembly Species",
+           y="Assembly Length (bp)",
+           title="Species Assembly Lengths")
+    
+    
+    ggplot(df, aes(x=Species, y=`Total length`)) + 
+      geom_boxplot(outliers=F) + 
+      scale_x_discrete(labels=c("A. baumannii","K. pneumoniae")) +
+      labs(x="Assembly Species",
+           y="Assembly Length (bp)",
+           title="Species Assembly Lengths") +
+      theme(plot.title=element_text(hjust=0.5),
+            axis.title=element_text(family="serif"),
+            axis.text=element_text(angle=45),
+            axis.title.x=element_text(color="blue"),
+            axis.text.x=element_text(size=12),
+            axis.title.y=element_text(hjust=1),
+            axis.text.y=element_text(angle=45),
+            axis.ticks=element_blank())
+
+There are many, many other parameters and functions for theme() that can be combined to customize your graph
+
+C. Legends
+
+Legends are included by default when a figure is plotted using ggplot.
+For example, the scatter plot below includes a legend on the right,
+and each point is colored as coral, green, blue, or purple:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point()
+
+We can change the position of the legend using the theme() function.
+Options for legend.position include "none", "left", "right" (default), 
+"bottom", "top", "inside":
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.position="top")
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.position="none")
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.position="inside")
+
+Legend position can also be a numeric vector that include an x and y 
+coordinate c(x,y), where x and y are values from 0-1:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.position=c(1,1))
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.position=c(0.5,0.5))
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.position=c(0,0))
+
+The element_text() function can be used with theme() to change the
+legends text:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.text=element_text(color="darkblue",angle=45),
+            legend.title=element_text(face="bold", size="8"))
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.text=element_blank(),
+            legend.title=element_blank())
+
+Remember: Searching the help tab for a function like element_text() can show us its parameters:
+
+    ?element_text()
+
+The element_rect() function can be used with theme() to change the legend's color, fill, etc, just like the plot's background above:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      theme(legend.background=element_rect(color="purple",
+                                           fill="lightblue",
+                                           linewidth=1,
+                                           linetype=3))
+
+#### Making figures with ggplot2 part V: Colors and saving your plots 
+
+In this section, we will review how to customize the colors of your
+figures and save figures to a file using ggplot2.  
+
+For our example data, we will be using the same assembly QC table from the previous section:
+
+    df <- read.delim("./data/quast_data.tsv", 
+                     header=T, 
+                     check.names=F,
+                     stringsAsFactors=F,
+                     sep="\t")
+
+A. Brief review  
+
+As discussed in previous sections, we can choose a single color for our plots, or we can color our plots by variables in our data set.  
+
+Plotting with a single color is done outside aes():
+
+    library(ggplot2)
+    
+    ggplot(df, aes(x=N50)) + 
+      geom_histogram(bins=10, color="black", fill="lightgreen")  
+
+If no color is specified within the geom function, ggplot2 will use black 
+or grey by default.  
+
+Coloring our plot by a variable in our data set is done within aes():
+
+    ggplot(df, aes(x=N50, fill=Species)) +
+      geom_histogram(bins=10)
+
+If no color palette is given within aes() when coloring a plot by a variable in our data set, ggplot2 uses its built-in color palette by default.  
+
+B. Hue, chroma, and value  
+
+Hue, chroma, and value are part of the Munsell color system, which describes the properties of color.
+
+https://munsell.com/color-blog/munsell-book-of-color-1929-hue-value-chroma/  
+
+Hue is how we distinguish and name the colors present on the color wheel, chroma is the saturation of color, and value is the lightness (or darkness) of a color.  
+
+The hue, chroma, and value of the colors in a plot can be changed using the scale_fill_hue() and scale_color_hue() functions.
+
+    ggplot(df, aes(x=Species, y=`Total length`, color=Species)) + 
+      geom_boxplot(outliers=F)
+
+Hue is changed with the h parameter [0-360].  
+For example, green is 120 degrees on the color wheel and purple is 270:
+
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_hue(h=c(120,270))
+    
+    ggplot(df, aes(x=Species, y=`Total length`, color=Species)) + 
+      geom_boxplot(outliers=F) +
+      scale_color_hue(h=c(120,270))
+
+Chroma is changed with the c parameter (maximum value varies depending on a combination of hue and value):
+
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_hue(c=20)
+    
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_hue(c=150)
+
+Value is changed with the l (lightness) parameter [0,100]:
+
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_hue(l=90)
+    
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_hue(l=10)  
+
+C. Manually choosing colors  
+
+Colors palettes can be chosen manually using scale_color_manual() and
+scale_fill_manual(). Colors should be in hex code format. For example:
+
+    cp2 <- c("6e0067","3ff0a1")
+    
+    cp4 <- c("d15124","002691","60c250","484e00")
+
+There are many websites for generating color palettes. I prefer i want hue:  
+http://medialab.github.io/iwanthue/
+
+scale_fill_manual() can be used for figures like box plots, histograms, etc:
+
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_manual(values=cp2)
+
+scale_color_manual() can be used for figures like line plots and scatter plots:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      scale_color_manual(values=cp4)
+
+ggplot2 also has grey color scale functions, scale_fill_grey() and 
+scale_color_grey():
+
+    ggplot(df, aes(x=Species, y=`Total length`, fill=Species)) + 
+      geom_boxplot(color="black", outliers=F) +
+      scale_fill_grey()
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      scale_color_grey()
+    
+    ?scale_fill_grey()
+
+Color gradients for continuous variables can be set using scale_color_gradient() and scale_fill_gradient():
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=`N50`)) + 
+      geom_point() +
+      scale_color_gradient()
+
+We can use the high and low parameters to choose either end of gradients, and ggplot2 will automatically create a gradient using those colors:
+
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=`N50`)) + 
+      geom_point() +
+      scale_color_gradient(low="6e0067", high="3ff0a1")
+    
+    Additionally, scale_fill/color_gradient2() can be used to create a color 
+    gradient with a chosen middle color aka a diverging color gradient:
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=`N50`)) + 
+      geom_point() +
+      scale_color_gradient2(low="6e0067", high="3ff0a1", mid="grey",
+                            midpoint=mean(df$N50))
+
+D. Color palette modules  
+
+There are many color palette modules for R that have been written. Some examples include:
+
+    library(RColorBrewer)
+    https://r-graph-gallery.com/38-rcolorbrewers-palettes.html
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      scale_color_brewer(palette="Set1")
+    
+    library(viridis)
+    https://cran.r-project.org/web/packages/viridis/vignettes/intro-to-viridis.html
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      scale_color_viridis(option="plasma", discrete=T)
+    
+    library(ggDracula)
+    https://github.com/dracula/ggplot2
+    
+    ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      scale_color_dracula(discrete=T)
+
+E. Saving your plot  
+
+The easiest way to save your plot is using ggsave().  
+ggsave() will save the last figure you plotted to a file by default, or you can supply it a variable containing a plot:
+
+    ?ggsave
+    
+    ggsave("my_plot.png",
+           path="./figures/",
+           width=5,
+           height=5,
+           units="in",
+           dpi=300)
+    
+    my_plot <- ggplot(df, aes(x=`Largest contig`, y=`Total length`, color=AMR)) + 
+      geom_point() +
+      scale_color_viridis(option="plasma", discrete=T)
+    my_plot
+    
+    ggsave("my_plot.png",
+           plot=my_plot,
+           path="./figures/",
+           width=5,
+           height=5,
+           units="in",
+       dpi=300)
 
 ## General Bioinformatic Terms
 
