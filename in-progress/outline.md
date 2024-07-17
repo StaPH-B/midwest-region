@@ -196,7 +196,7 @@ BCL or Binary Base Call format is the raw datafile for illumina sequencing that 
 
 #### .fastq / .fastq.gz files
 
-Fastq files are files that contain sequence data and quality information. The .gz extension just informs you the file is compressed, to be covered later. It is the format in which sequencing data is most often kept in. The file is structured with each read labeled with '@'. The following line has the sequence bases for that read. The 3rd line has a '+', and the 4th line has the sequence quality (Phred score) for each base encoded in a letter format.
+Fastq files are files that contain sequence data (reads, which are fragments of sequenced DNA base pairs that are generated during sequencing, the raw data from a sequencing machine) and quality information. The .gz extension just informs you the file is compressed, to be covered later. It is the format in which sequencing data is most often kept in. The file is structured with each read labeled with '@'. The following line has the sequence bases for that read. The 3rd line has a '+', and the 4th line has the sequence quality (Phred score) for each base encoded in a letter format.
 
 Example of two reads:
 ```
@@ -599,7 +599,21 @@ Depending on your routine tasks, your compute infrastructure  may vary in order 
 - Discuss the significance of a robust network infrastructure to support data transfer, both internally within the institution/organization and externally with collaborators.
 - Mention the importance of high-speed connections and consider options like dedicated network links or data transfer services for efficient data exchange.
 
-## Public Repositories and Publicly Available Data
+## Publicly Available Sequence Data
+Sources:
+-https://hbctraining.github.io/Accessing_public_genomic_data/lessons/accessing_public_experimental_data_odyssey.html
+
+Making sequence data publicly available is essential to the growth and success of public health and the scientific community at large. There are a number of databases in which sequence data can be submitted to in order to be made publicly available. For example:  
+
+[NCBI (National Center for Biotechnology Information)](https://www.ncbi.nlm.nih.gov/search/) – Part of the National Laboratory of Medicine and National Institute of health. The Entrez Global Query Cross Database search system is widely adopted by NCBI for array of nucleotide and protein sequences, protein structures, PubMed, taxonomy, whole genome etc.
+[European Nucleotide Archive](https://www.ebi.ac.uk/ena/browser/home) – "The European Nucleotide Archive (ENA) provides a comprehensive record of the world’s nucleotide sequencing information, covering raw sequencing data, sequence assembly information and functional annotation."
+[GISAID](https://gisaid.org/) – "The GISAID Data Science Initiative promotes the rapid sharing of data from priority pathogens including influenza, hCoV-19, respiratory syncytial virus (RSV), hMpxV as well as arboviruses including chikungunya, dengue and zika. This includes genetic sequence and related clinical and epidemiological data associated with human viruses, and geographical as well as species-specific data associated with avian and other animal viruses, to help researchers understand how viruses evolve and spread during epidemics and pandemics."
+
+### Submitting data to NCBI
+https://submit.ncbi.nlm.nih.gov/
+
+### Submitting data to GISAID
+https://gisaid.org/publish/
 
 ## Data Visualization
 
