@@ -124,7 +124,7 @@ The Illumina platform has been a workhorse in public health and it’s hard to b
 
 NGS is higher resolution (thousands vs millions of base pairs)  
 NGS can sequence more base pairs per day  (millions vs billions of base pairs)
-NGS is not limited to the laboratory 
+NGS is not limited to the laboratory, some sequencers are now portable
 
 ### Types of sequencing
 
