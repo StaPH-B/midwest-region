@@ -1,5 +1,5 @@
 #theme: good-clean-read
-remote_theme: adueck/good-clean-read
+remote_theme: allejo/jekyll-docs-theme@v1.0.0
 
 # Site settings
 title: AMD Midwest
