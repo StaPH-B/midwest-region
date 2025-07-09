@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        {% include head/full.html %}
+    </head>
+
+    {% assign scrollSpyOffset = page.scrollSpyOffset | default: layout.scrollSpyOffset | default: 0 %}
+    <body
+        class="layout-{{ page.layout }}"
+        data-spy="scroll"
+        data-target="#page-toc"
+        data-offset="{{ scrollSpyOffset }}"
+    >
+        {% include navigation.html %}
+        {% include masthead.html %}
+
+        <div class="cards-wrapper">
+            {% for guide in site.guides %}
+            <div class="card-container">
+                <a href="{{ guide.url }}">
+                    <div class="card">
+                        <p class="heading">{{ guide.title }}</p>
+                        <p class="para">{{ guide.description }}</p>
+                        <div class="overlay"></div>
+                        <button class="card-btn">View</button>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% include footer/full.html %}
+    </body>
+</html>

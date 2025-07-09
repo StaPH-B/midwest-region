@@ -1,35 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="description" content="{{ site.description }}">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/normalize.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/solo.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/syntax.css">
-  {% if site.font-awesome-include %}<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">{% endif %}
-  <link rel="stylesheet" href="{{ site.baseurl }}/css/rrssb.css">
+<html lang="en" class="no-js">
+    <head>
+        {% include head/full.html %}
+    </head>
 
-  <script src="{{ site.baseurl }}/scripts/jquery.js"></script>
-  <link rel="canonical" href="{{ site.url }}" />
-</head>
-<body>
-  <article>
-   <div class="container">
-       <div style="width:50%;float:left">
-         <img src="https://staph-b.github.io/midwest-region/images/amd-midwest-region.png" alt="AMD Midwest States"/>
-      </div>
-      <div style="width:50%;float:right;font-size: 4vw;">
-        <b><a href="./" style="color:black;text-decoration:none;">{{ site.tag_text }}</a></b>
-      </div>
-    </div>
+    {% assign scrollSpyOffset = page.scrollSpyOffset | default: layout.scrollSpyOffset | default: 0 %}
+    <body
+        class="layout-{{ page.layout }}"
+        data-spy="scroll"
+        data-target="#page-toc"
+        data-offset="{{ scrollSpyOffset }}"
+    >
+        {% include navigation.html %}
+        {% include masthead.html %}
 
-    <div class="container" style="padding-top:20%">
-      {{ content }}
-    </div>
-  </article>
-<script src="{{ site.baseurl }}/scripts/rrssb.min.js"></script>
-</body>
+        {{ content }}
+
+        {% include footer/full.html %}
+    </body>
 </html>
