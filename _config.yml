@@ -40,6 +40,7 @@ collections:
     sort_by: guide_number
   trainings:
     output: true
+    sort_by: training_number
   videos:
     output: false
 
