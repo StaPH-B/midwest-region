@@ -63,7 +63,7 @@ Recombination – rearrangement of genetic material. Both prokaryotes and eukary
 * **Pyrosequencing** –  In pyrosequencing, the sequencing reaction is monitored through the release of the pyrophosphate during nucleotide incorporation. A single nucleotide is added to the sequencing chip which will lead to its incorporation in a template dependent manner. This incorporation will result in the release of pyrophosphate which is used in a series of chemical reactions resulting in the generation of light. Light emission is detected by a camera which records the appropriate sequence of the cluster. Any unincorporated bases are degraded by apyrase before the addition of the next nucleotide. This cycle continues until the sequencing reaction is complete.
 
 * **Paired end sequencing** –
-![Paired_End](https://staph-b.github.io/midwest-region/images/paired_end.png "Paired End Sequencing")
+![Paired_End](/images/paired_end.png "Paired End Sequencing")
 
 It involves sequencing both ends of the DNA fragment and generate high quality sequence data. It’s a simple work flow allows generation of unique ranges of insert sizes.
 
