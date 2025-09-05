@@ -20,30 +20,32 @@ links:
       brand: true
       url: https://github.com/StaPH-B/midwest-region
   homepage:
-    - title: Guides
-      icon: chart-bar
-      brand: false
-      url: guides.html
     - title: Trainings
-      icon: compass
+      icon: 
       brand: false
       url: trainings.html
-    - title: Videos
-      icon: play-circle
+    - title: Resources
+      icon: 
       brand: false
-      url: videos.html
+      url: resources.html
+    - title: Events
+      icon: 
+      brand: false
+      url: events.html
+#    - title: Consultations
+#      icon: 
+#      brand: false
+#      url: consultations.html
+
   footer:
 
 collections:
-  guides:
-    output: true
-    sort_by: guide_number
   trainings:
     output: true
     sort_by: training_number
-  videos:
-    output: false
-
+  resources:
+    output: true
+    sort_by: resource_number
 
 ui:
   mode: 'dark' # 'auto', 'dark', 'light'
@@ -95,3 +97,5 @@ exclude:
   - LICENSE.md
   - README.md
   - screenshot.png
+ 
+exclude: ["templates/"]
