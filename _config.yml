@@ -1,16 +1,101 @@
-#theme: good-clean-read
-remote_theme: adueck/good-clean-read
+# name of the software
+name: AMD Midwest Region
 
-# Site settings
-title: AMD Midwest
-tag_text: AMD Midwest Region Resource Site
-description: A resource of common terms and questions for understanding sequencing and bioinformatics.
-#url: "http://127.0.0.1:4000"
-#baseurl: "https://staph-b.github.io/midwest-region/"
+project:
+  version:
+  download_url:
+  download_text:
 
-font-awesome-include: true # make this false if you don't need font-awesome
+license:
+  software: MIT License
+  software_url: https://opensource.org/licenses/MIT
+
+  docs: CC BY 3.0
+  docs_url: https://creativecommons.org/licenses/by/3.0/
+
+links:
+  header:
+    - title: GitHub
+      icon: github
+      brand: true
+      url: https://github.com/StaPH-B/midwest-region
+  homepage:
+    - title: Trainings
+      icon: 
+      brand: false
+      url: trainings.html
+    - title: Resources
+      icon: 
+      brand: false
+      url: resources.html
+    - title: Events
+      icon: 
+      brand: false
+      url: events.html
+#    - title: Consultations
+#      icon: 
+#      brand: false
+#      url: consultations.html
+
+  footer:
+
+collections:
+  trainings:
+    output: true
+    sort_by: training_number
+  resources:
+    output: true
+    sort_by: resource_number
+
+ui:
+  mode: 'dark' # 'auto', 'dark', 'light'
+  brand:
+    dark: "#00ceff"
+    light: "#a20000"
+  border_color:
+    dark: "#5f5f5f"
+    light: "#dee2e6"
+  header:
+    trianglify: true
+    dark:
+      color1: "#062a48"
+      color2: "#304e67"
+    light:
+      color1: "#080331"
+      color2: "#673051"
+  masthead:
+    color:
+      dark: "#fff"
+      light: "#fff"
+    align:
+      homepage: 'center'
+      page: 'left'
+
+social:
+  github:
+    enabled: false
+    user:
+    repo:
+  twitter:
+    enabled: false
+    via:
+    hash:
+    account:
+  facebook:
+    enabled: false
+    profileUrl:
+
+analytics:
+  google:
 
 # Build settings
 markdown: kramdown
-
-exclude: ["README.md"]
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - jekyll-docs-theme.gemspec
+  - LICENSE.md
+  - README.md
+  - screenshot.png
+ 
+exclude: ["templates/"]

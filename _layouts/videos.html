@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+    <head>
+        {% include head/full.html %}
+    </head>
+
+    {% assign scrollSpyOffset = page.scrollSpyOffset | default: layout.scrollSpyOffset | default: 0 %}
+    <body
+        class="layout-{{ page.layout }}"
+        data-spy="scroll"
+        data-target="#page-toc"
+        data-offset="{{ scrollSpyOffset }}"
+    >
+        {% include navigation.html %}
+        {% include masthead.html %}
+
+        <div class="cards-wrapper">
+            {% for video in site.videos %}
+            <div class="card-container">
+                    <div class="video-card card">
+                        <iframe id="ytplayer"
+                            type="text/html"
+                            width="100%"
+                            height="100%"
+                            srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://www.youtube.com/embed/{{ video.video_id }}?autoplay=1><img src=https://img.youtube.com/vi/{{ video.video_id }}/hqdefault.jpg><span>▶</span></a>"
+                            frameborder="0">
+                        </iframe>
+                        <p class="heading">{{ video.title }}</p>
+                        <p class="para">{{ video.content }}</p>
+                    </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        {% include footer/full.html %}
+    </body>
+</html>
