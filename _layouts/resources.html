@@ -17,7 +17,7 @@
         <div class="cards-wrapper">
             {% for resource in site.resources %}
             <div class="card-container">
-                <a href="{{ resource.url }}">
+                <a href="{{ site.baseurl }}{{ resource.url }}">
                     <div class="card">
                         <p class="heading">{{ resource.title }}</p>
                         <p class="para">{{ resource.description }}</p>

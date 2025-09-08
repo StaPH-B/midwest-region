@@ -17,7 +17,7 @@
         <div class="cards-wrapper">
             {% for training in site.trainings %}
             <div class="card-container">
-                <a href="{{ training.url }}">
+                <a href="{{ site.baseurl }}{{ training.url }}">
                     <div class="card">
                         <p class="heading">{{ training.title }}</p>
                         <p class="para">{{ training.description }}</p>

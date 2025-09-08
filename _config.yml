@@ -23,19 +23,19 @@ links:
       url: https://github.com/StaPH-B/midwest-region
   homepage:
     - title: Trainings
-      icon: 
+      icon:
       brand: false
       url: https://github.com/StaPH-B/midwest-region/trainings.html
     - title: Resources
-      icon: 
+      icon:
       brand: false
       url: resources.html
     - title: Events
-      icon: 
+      icon:
       brand: false
       url: events.html
 #    - title: Consultations
-#      icon: 
+#      icon:
 #      brand: false
 #      url: consultations.html
 
@@ -101,5 +101,4 @@ exclude:
   - LICENSE.md
   - README.md
   - screenshot.png
- 
-exclude: ["templates/"]
+  - templates/
