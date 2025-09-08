@@ -1,6 +1,8 @@
 # name of the software
 name: AMD Midwest Region
 
+baseurl: /midwest-region
+
 project:
   version:
   download_url:
