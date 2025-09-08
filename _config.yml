@@ -46,7 +46,9 @@ collections:
   resources:
     output: true
     sort_by: resource_number
-
+  events:
+    output: true
+    sort_by: event_number
 ui:
   mode: 'dark' # 'auto', 'dark', 'light'
   brand:
