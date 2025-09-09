@@ -25,7 +25,7 @@ links:
     - title: Trainings
       icon:
       brand: false
-      url: https://github.com/StaPH-B/midwest-region/trainings.html
+      url: trainings.html
     - title: Resources
       icon:
       brand: false
