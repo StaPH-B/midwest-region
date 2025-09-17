@@ -34,10 +34,10 @@ links:
       icon:
       brand: false
       url: events.html
-#    - title: Consultations
-#      icon:
-#      brand: false
-#      url: consultations.html
+    - title: Consultations
+      icon:
+      brand: false
+      url: consultations.html
 
   footer:
 
