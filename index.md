@@ -40,6 +40,12 @@ Dr. Abigail Shockey is a data scientist in the Wisconsin State Laboratory of Hyg
 
 ### Michigan Department of Health & Human Services
 
+#### Genomics Technical Director
+
+##### Heather Blankenship, PhD
+
+Dr. Heather Blankenship serves as the Genomics Technical Director at the Michigan Department of Health and Human Services (MDHHS), Bureau of Laboratories. She obtained her bachelor's from George Mason University where she specialized in Biotechnology and Molecular Genetics before completing her PhD at Michigan State University in Microbiology and Molecular Genetics specializing in Genomic Epidemiology. In her role as a senior manager at MDHHS, she provides oversight for next generation sequencing processes, bioinformatics development, genomic epidemiology analyses, and integration of these efforts into public health action. She currently serves on multiple national and international workgroups and committees to provide support and insight on workforce development, quality best practices, and utilization of genomic data. Over the course of her career, she has been cross-trained in microbiology, bioinformatics, and epidemiology, and is passionate about leveraging her cross-training to connect these diverse fields. 
+
 #### Genomic Analysis Unit Manager
 
 ##### Arianna Miles-Jay, PhD MPH  
@@ -52,7 +58,7 @@ Dr. Arianna Miles-Jay is the Genomic Analysis Unit Manager at the Michigan Depar
 
 John Chodkowski is a Bioinformatics Specialist within the Genomics Analysis Unit at the Michigan Department of Health & Human Services (MDHHS). He received his doctoral degree in Microbiology and Molecular Genetics at Michigan State University. His current work focuses on bioinformatic pipeline development within the nextflow framework, particularly with respect to viruses and TB, and serving as a co-bioinformatics regional resource.
 
-#### Bioinformatics Training Lead
+#### Bioinformatics and Laboratory Training Lead
 
 ##### Macy E. Pell, PhD (she/her)  
 
