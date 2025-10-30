@@ -5,7 +5,7 @@ description: October 21-22, 2025 ~ Lansing, MI
 event_number: 1
 ---
 # 2025 Midwest AMD Symposium
-![Group-photo](https://github.com/StaPH-B/midwest-region/blob/main/images/2025_Midwest-AMD-Symposium/IMG_0819.jpeg "Group photo")
+![Group-photo](/images/IMG_0819.png "Group photo")
 *Group photo of attendees, speakers, and organizaers at the 2025 Midwest AMD Symposium in Lansing, MI.*
 
 ## Event Overview
