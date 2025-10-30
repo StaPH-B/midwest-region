@@ -8,8 +8,7 @@ event_number: 1
 ![Group-photo](https://github.com/StaPH-B/midwest-region/blob/main/images/2025_Midwest-AMD-Symposium/IMG_0819.jpeg "Group photo")
 *Group photo of attendees, speakers, and organizaers at the 2025 Midwest AMD Symposium in Lansing, MI.*
 
-### Event Overview
-***
+## Event Overview
 **Pulling back the curtain: exploring the inner workings of genomics workflows in public health** \
 *October 21-22, 2025 ~ Michigan Department of Health & Human Services, Bureau of Laboratories ~ Lansing, MI*
 
@@ -26,8 +25,7 @@ The Midwest AMD Symposium is an annual, in-person training event for public heal
 - 15 Speakers from 5 different State health departments
 - 48 Trainees from 19 different organizations across the country
 
-### Event Programming
-***
+## Event Programming
 **Session 1 - Setting the stage**
  - Introduction to clinical laboratory regulations
  - Exploring different takes on genomics validations
@@ -44,9 +42,8 @@ The Midwest AMD Symposium is an annual, in-person training event for public heal
  - Diverse perspectives on structuring collaborative AMD programs
  - Identifying solutions to common AMD challenges
 
-### Event Resources
-***
-- 2025 Agenda
+## Event Resources
+- [2025 Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Full-Agenda_2025-Midwest-AMD-Symposium.pdf)
 - [2025 Symposium Photos](https://github.com/StaPH-B/midwest-region/tree/main/images/2025_Midwest-AMD-Symposium)
 
 ***
