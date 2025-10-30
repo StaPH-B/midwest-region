@@ -5,7 +5,8 @@ description: April 2-3, 2025 ~ Lansing, MI
 event_number: 2
 ---
 # Midwest ONT Sequencing Training
-
+![Group-photo](/images/ONT-training-group-photo.png "Group photo")
+*Group photo of attendees, speakers, and organizaers at the Midwest ONT Sequencing Training in Lansing, MI.*
 ## Training Overview
 *April 2-3, 2025 ~ Michigan Department of Health & Human Services, Bureau of Laboratories ~ Lansing, MI*
 
@@ -45,7 +46,7 @@ The Midwest Oxford Nanopore Technologies (ONT) Sequencing Training was an in-per
 - Michigan State University Veterinary Diagnostic Laboratory ~ Lindsy Hengesbach, MB(ASCP)CM
   
 ## Event Resources
-- [Full Agenda]
+- [Full Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Agenda_Midwest-ONT-Sequencing-Training.pdf)
 - [Oxford Nanopore Technologies](https://nanoporetech.com/)
 ***
 #### Funding Acknowledgement
