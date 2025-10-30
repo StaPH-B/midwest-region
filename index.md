@@ -70,8 +70,7 @@ Macy is the AMD Training Lead and Analyst for the Genomics Section at the Michig
 ## Upcoming Events
 {:.mt-lg-0}
 
-### AMD Midwest Symposium 2025
-##### Tuesday, October 21-Wednesday, October 22, 2025
+
 
 </div>
 </div>
