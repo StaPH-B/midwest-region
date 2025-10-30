@@ -10,9 +10,3 @@ To add new pages to the Resources and Trainings sections of the website:
 6. Rename the template file with a name corresponding to the resource's/training's title. 
 7. Preview the changes using the command `bundle exec jekyll serve .` in the top of the repository's directory. Changes can be  previewed at the URL `http://localhost:4000/midwest-region/`
 8. Commit changes and push to main branch.
-
-# Adding content to the Events pages
-1. In the `_events/`directory, edit either the `upcoming.md` or `past.md` markdown file. 
-2. Add your content to the markdown file according to markdown syntax. A training to markdown can be found [here](https://www.markdownguide.org/basic-syntax/). Any images you want to include should be placed in the `images/` directory and can be added using the syntax given in the following example: `![Paired_End](/images/paired_end.png "Paired End Sequencing")` Videos can be added using the syntax given in the following example: `{% include youtube.html id="1JnLBws7L70" %}`. In this example `1JnLBws7L70` is the string of characters found at the end of the YouTube URL where the video can be watched.
-3. Preview the changes using the command `bundle exec jekyll serve .` in the top of the repository's directory. Changes can be  previewed at the URL `http://localhost:4000/midwest-region/`.
-4. Commit changes and push to main branch.
