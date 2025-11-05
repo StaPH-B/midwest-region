@@ -27,6 +27,6 @@ Next call ---> Janurary 2026
 
 ## Previous Calls
 - October 21, 2025 [*Midwest AMD Symposium*](https://staphb.org/midwest-region/events/2025-Midwest-AMD-Symposium.html)
-- July 15, 2025
-- March 18, 2025
+- July 15, 2025 [Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Agenda_Quarterly-Call_July2025.pdf)
+- March 18, 2025 [Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Agenda_Quarterly-Call_March2025.pdf)
 - October 15, 2024
