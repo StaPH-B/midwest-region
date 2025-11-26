@@ -69,6 +69,9 @@ Macy is the AMD Training Lead and Analyst for the Genomics Section at the Michig
 
 ## Upcoming Events
 {:.mt-lg-0}
+#### [AMD Quarterly Call - Midwest](https://staphb.org/midwest-region/events/AMD-Midwest-Quarterly-Call.html)
+Tuesday, February 3, 2025\
+2-3:30pm
 
 
 
