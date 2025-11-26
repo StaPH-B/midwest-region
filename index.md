@@ -46,13 +46,13 @@ Dr. Abigail Shockey is a data scientist in the Wisconsin State Laboratory of Hyg
 
 Dr. Heather Blankenship serves as the Genomics Technical Director at the Michigan Department of Health and Human Services (MDHHS), Bureau of Laboratories. She obtained her bachelor's from George Mason University where she specialized in Biotechnology and Molecular Genetics before completing her PhD at Michigan State University in Microbiology and Molecular Genetics specializing in Genomic Epidemiology. In her role as a senior manager at MDHHS, she provides oversight for next generation sequencing processes, bioinformatics development, genomic epidemiology analyses, and integration of these efforts into public health action. She currently serves on multiple national and international workgroups and committees to provide support and insight on workforce development, quality best practices, and utilization of genomic data. Over the course of her career, she has been cross-trained in microbiology, bioinformatics, and epidemiology, and is passionate about leveraging her cross-training to connect these diverse fields. 
 
-#### Genomic Analysis Unit Manager
+#### Genomic Analysis Unit Manager/Interim Genomic Epidemiology Training Lead
 
 ##### Arianna Miles-Jay, PhD MPH  
 
 Dr. Arianna Miles-Jay is the Genomic Analysis Unit Manager at the Michigan Department of Health and Human Services Bureau of Laboratories, where she leads a team of bioinformaticians and genomic epidemiologists that process and analyze pathogen genomic data to support infectious disease prevention and response efforts in Michigan. She earned her MPH and PhD in Epidemiology at The University of Washington followed by a postdoctoral fellowship focused on the genomic epidemiology of healthcare-associated infections at The University of Michigan. Broadly speaking, Arianna is interested in expanding the implementation of genomic epidemiology within state and local public health through developing sustainable and flexible systems to analyze pathogen sequence data, as well as through teaching the current and future workforce about the power of genomic epidemiology to improve public health. 
 
-### Bioinformatics Regional Resource
+#### Bioinformatics Regional Resource
 
 ##### John Chodkowski, PhD  
 
