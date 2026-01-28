@@ -10,7 +10,7 @@ Next call ---> Tuesday, February 3, 2026; 2-3:30pm ET
 
 **Meeting Facilitator**: Macy Pell - AMD Training Lead & Analyst, *Michigan Department of Health & Human Services*
 
-## [February Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Feb26_AMD-Quarterly-Midwest_Agenda.pdf)
+## [February Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Feb2026_Agenda.pdf)
 1. Updates from **Bioinformatics Regional Resources** and **Training Leads**
    - Bioinformatics Regional Resources
       - John Chodkowski ~ *Michigan Department of Health & Human Services*
@@ -20,12 +20,14 @@ Next call ---> Tuesday, February 3, 2026; 2-3:30pm ET
       - Abigail Shockey ~ *Wisconsin State Laboratory of Hygiene*
    - Genomic Epidemiology Training Lead
         - Arianna Miles-Jay ~ *Michigan Department of Health & Human Services*
+2. Special Presentation: Easy Genomics
+    - Kelsey Florek ~ *Wisconsin State Laboratory of Hygiene*
 3. Updates from **PulseNet Regional Lab**
       - Becky Kramer ~ *Michigan Department of Health & Human Services*
 4. Updates from **ARLN Regional Lab**
       - *Wisconsin State Laboratory of Hygiene*
 5. Special Presentation: Introducing the Midwest Alliance for Applied Genomic Epidemiology (MAAGE) platform
-       - *Illinois Department of Public Health*
+    - *Illinois Department of Public Health* & *Argonne National Laboratory*
 
 ## Previous Calls
 - October 21, 2025 [*Midwest AMD Symposium*](https://staphb.org/midwest-region/events/2025-Midwest-AMD-Symposium.html)
