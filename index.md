@@ -69,10 +69,8 @@ Macy is the AMD Training Lead and Analyst for the Genomics Section at the Michig
 
 ## Upcoming Events
 {:.mt-lg-0}
-#### [AMD Quarterly Call - Midwest](https://staphb.org/midwest-region/events/AMD-Midwest-Quarterly-Call.html)
-Tuesday, February 3, 2025 - 2pm ET
-#### Midwest Genomic Analysis Training
-Lansing, MI (in-person) ~ Tuesday, May 12-Wednesday, May 13, 2026
+### [2026 Midwest Bioinformatics Training](https://staphb.org/midwest-region/events/2026-Midwest-Bioinformatics-Training.html) - *in-person*
+May 12-13, 2026 ~ Lansing, Michigan
 
 
 </div>
