@@ -46,7 +46,7 @@ Dr. Abigail Shockey is a data scientist in the Wisconsin State Laboratory of Hyg
 
 Dr. Heather Blankenship serves as the Genomics Technical Director at the Michigan Department of Health and Human Services (MDHHS), Bureau of Laboratories. She obtained her bachelor's from George Mason University where she specialized in Biotechnology and Molecular Genetics before completing her PhD at Michigan State University in Microbiology and Molecular Genetics specializing in Genomic Epidemiology. In her role as a senior manager at MDHHS, she provides oversight for next generation sequencing processes, bioinformatics development, genomic epidemiology analyses, and integration of these efforts into public health action. She currently serves on multiple national and international workgroups and committees to provide support and insight on workforce development, quality best practices, and utilization of genomic data. Over the course of her career, she has been cross-trained in microbiology, bioinformatics, and epidemiology, and is passionate about leveraging her cross-training to connect these diverse fields. 
 
-#### Genomic Analysis Unit Manager/Interim Genomic Epidemiology Training Lead
+#### Genomic Analysis Unit Manager
 
 ##### Arianna Miles-Jay, PhD MPH  
 
@@ -63,6 +63,13 @@ John Chodkowski is a Bioinformatics Specialist within the Genomics Analysis Unit
 ##### Macy E. Pell, PhD (she/her)  
 
 Macy is the AMD Training Lead and Analyst for the Genomics Section at the Michigan Department of Health and Human Services – Bureau of Laboratories. She obtained her PhD in Microbiology and Molecular Genetics from Michigan State University where she received extensive training in genomic sequencing, analysis, and interpretation of infectious diseases. As a seasoned science communicator, Macy focuses on curating and facilitating training resources and events for the public health workforce affiliated with advanced molecular detection efforts (i.e., sequencing, bioinformatics, and genomic epidemiology) in the Midwest region.
+
+#### Genomic Epidemiology Training Lead
+
+##### Madison Walton-Franklin, PhD (she/her)
+
+Dr. Madison Walton-Franklin serves as the Genomic Epidemiology Training Lead within the Genomics Section of the Michigan Department of Health and Human Services, Bureau of Laboratories. She earned a graduate certificate in Public Health Practice and a doctoral degree in Microbiology from Wayne State University (Detroit, MI). Madison is an alumna of CDC’s Epidemic Intelligence Service (Class of 2023), where she worked on the front lines of public health with Oregon Public Health Division and Multnomah County Health Department (Portland, OR). She brings her passion for education and scientific communication to the role of Genomic Epi Training Lead along with expertise in microbiology and applied public health. In her current role, Madison is primarily responsible for curating, designing, and implementing genomic epidemiology curriculum for training and workforce development in the Midwest region.
+
 
 </div>
 <div class="col-lg-6" markdown="1">
