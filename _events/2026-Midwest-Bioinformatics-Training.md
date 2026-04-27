@@ -13,10 +13,7 @@ event_number: 4
 
 **Target Audience**: This training is intended for public health personnel with beginner-level bioinformatics experience which may include, but is not limited to, laboratorians or genomic epidemiologists interested in bioinformatics cross-training or beginner-level bioinformaticians.
 
-**Interested in attending?** secure your spot by completing this [REGISTRATION FORM](https://forms.office.com/g/xHwN8xgK1z)!
-
 *For more details:*
-[Agenda Overview](https://github.com/StaPH-B/midwest-region/blob/main/images/Agenda-overview_2026-Midwest-Bioinformatics-Training.pdf), [Event announcement](https://github.com/StaPH-B/midwest-region/blob/main/images/Announcement-registration_2026-Midwest-Bioinformatics-Training.pdf)
-***
-#### Funding Acknowledgement
+[Agenda Overview](https://github.com/StaPH-B/midwest-region/blob/main/images/Agenda-overview_2026-Midwest-Bioinformatics-Training.pdf), [Full Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Final-Agenda_2026-Midwest-Bioinformatics-Training.pdf)
+
 *This training event is made possible through funding provided under the Epidemiology and Laboratory Capacity (ELC) for Prevention and Control of Emerging Infectious Diseases Cooperative Agreement (CK24-0002), Project D: Advanced Molecular Detection to the Michigan Department of Health & Human Services. The conclusions, findings, and opinions expressed by presenters and organizers of this event do not necessarily reflect the official position of the U.S. Department of Health and Human Services, the Public Health Services, or the Centers for Disease Control and Prevention.*
