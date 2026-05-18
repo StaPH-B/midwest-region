@@ -26,9 +26,7 @@ Next call ---> Tuesday, June 9th | 2-3:30pm ET
       - Alicia Mooney ~ *Wisconsin State Laboratory of Hygiene*
 
 ## 2026 Call Schedule
-| Quarter | Date | Agenda | Status |
-|---------|------|--------|--------|
-| *Q1*      | *2/3/26*|*[Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Feb2026_Agenda.pdf)* | *Completed* |
-|Q2       | 6/9/26| TBD | Scheduled |
-| Q3      | 9/8/26 | TBD | Scheduled |
-| Q4      | 12/8/26 | TBD | Scheduled |
+- *Q1* | *02/03/26* | *[Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Feb2026_Agenda.pdf)* | *Completed*
+- Q2 | 06/09/26 | TBD | Scheduled
+- Q3 | 09/08/26 | TBD | Scheduled 
+- Q4 | 12/08/26 | TBD | Scheduled
