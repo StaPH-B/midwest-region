@@ -76,8 +76,8 @@ Dr. Madison Walton-Franklin serves as the Genomic Epidemiology Training Lead wit
 
 ## Upcoming Events
 {:.mt-lg-0}
-### [2026 Midwest Bioinformatics Training](https://staphb.org/midwest-region/events/2026-Midwest-Bioinformatics-Training.html) - *in-person*
-May 12-13, 2026 ~ Lansing, Michigan
+### [Midwest AMD Quarterly Call](https://staphb.org/midwest-region/events/AMD-Midwest-Quarterly-Call.html)
+Tuesday, June 9th | 2-3:30pm ET
 
 
 </div>
