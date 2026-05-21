@@ -1,10 +1,10 @@
 ---
 layout: page
-title:  Midwest AMD Training Symposium
+title:  Midwest AMD Symposium & Workshop
 description: October 20-21, 2026
 event_number: 1
 ---
-# 2026 Midwest AMD Training Symposium
+# 2026 Midwest AMD Symposium & Workshop
 
 ## Save the date --> October 20-21, 2026 in Lansing, MI
 
