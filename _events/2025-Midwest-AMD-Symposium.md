@@ -8,7 +8,7 @@ event_number: 1
 
 ## Save the date --> October 20-21, 2026 in Lansing, MI
 
-**Event overview:** The Midwest AMD Training Symposium is an annual, in-person workshop for public health bioinformaticians, epidemiologists, laboratorians, administrative personnel, and associated partners and collaborators affiliated with AMD activities across the Midwest public health workforce region. Through a combination of educational presentations, group discussions, case studies, and interactive workshops, participants attend this event to learn about emerging AMD topics, become inspired with ideas to implement in their organizations, and connect with experts and colleagues across the Midwest region and beyond.
+**Event overview:** The Midwest AMD Symposium & Workshop is an annual, in-person event for public health bioinformaticians, epidemiologists, laboratorians, administrative personnel, and associated partners and collaborators affiliated with AMD activities across the Midwest public health workforce region. Through a combination of educational presentations, group discussions, case studies, and interactive workshops, participants attend this event to learn about emerging AMD topics, become inspired with ideas to implement in their organizations, and connect with experts and colleagues across the Midwest region and beyond.
 
 **Event Organizers** \
 *Michigan Department of Health & Human Services*
@@ -24,7 +24,7 @@ event_number: 1
 ## Resources from previous years
 ### 2025 Midwest AMD Symposium
 **Overview**
-The 4th-annual Midwest AMD Symposium explored the inner workings of genomics workflows in public health with the theme of "pulling back the curtain". A total of 63 professionals participated in this event including 15 speakers from five State health departments and 48 trainees spanning 19 different organizations across the country.
+The 4th-annual Midwest AMD Symposium explored the inner workings of genomics workflows in public health with the theme of "pulling back the curtain". A total of 66 professionals participated in this event including 15 speakers from five State health departments and 51 trainees spanning 19 different organizations across the country.
 - [2025 Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Full-Agenda_2025-Midwest-AMD-Symposium.pdf)
 - [2025 Symposium Photos](https://github.com/StaPH-B/midwest-region/tree/main/images/2025_Midwest-AMD-Symposium)
 
