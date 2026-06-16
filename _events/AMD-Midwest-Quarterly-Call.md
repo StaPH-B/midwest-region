@@ -6,7 +6,7 @@ event_number: 3
 ---
 
 # AMD Quarterly Call (Midwest)
-Next call ---> Tuesday, June 9th | 2-3:30pm ET
+Next call ---> Tuesday, September 8th | 2-3:30pm ET
 
 **Meeting Facilitator**: Macy Pell - AMD Training Lead & Analyst, *Michigan Department of Health & Human Services*
 
@@ -23,10 +23,10 @@ Next call ---> Tuesday, June 9th | 2-3:30pm ET
 2. Updates from **PulseNet Regional Lab**
       - Becky Kramer ~ *Michigan Department of Health & Human Services*
 3. Updates from **ARLN Regional Lab**
-      - Alicia Mooney ~ *Wisconsin State Laboratory of Hygiene*
+      - Ann Valley & Alicia Mooney ~ *Wisconsin State Laboratory of Hygiene*
 
 ## 2026 Call Schedule
 - *Q1* | *02/03/26* | *[Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Feb2026_Agenda.pdf)* | *Completed*
-- Q2 | 06/09/26 | TBD | Scheduled
+- *Q2* | *06/09/26* | *[Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/AGENDA_Jun2026_MQC.pdf)* | *Completed*
 - Q3 | 09/08/26 | TBD | Scheduled 
 - Q4 | 12/08/26 | TBD | Scheduled
