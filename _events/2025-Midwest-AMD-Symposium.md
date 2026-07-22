@@ -8,6 +8,8 @@ event_number: 1
 
 ## Save the date --> October 20-21, 2026 in Lansing, MI
 
+**[2026 Overview Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/overview-agenda_26MASW.pdf)**
+
 **Event overview:** The Midwest AMD Symposium & Workshop is an annual, in-person event for public health bioinformaticians, epidemiologists, laboratorians, administrative personnel, and associated partners and collaborators affiliated with AMD activities across the Midwest public health workforce region. Through a combination of educational presentations, group discussions, case studies, and interactive workshops, participants attend this event to learn about emerging AMD topics, become inspired with ideas to implement in their organizations, and connect with experts and colleagues across the Midwest region and beyond.
 
 **Event Organizers** \
