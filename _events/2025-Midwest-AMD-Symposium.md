@@ -5,14 +5,21 @@ description: October 20-21, 2026
 event_number: 1
 ---
 # 2026 Midwest AMD Symposium & Workshop
+**October 20-21, 2026 in Lansing, MI**
 
-## Save the date --> October 20-21, 2026 in Lansing, MI
 
-**[2026 Overview Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/overview-agenda_26MASW.pdf)**
 
-**Event overview:** The Midwest AMD Symposium & Workshop is an annual, in-person event for public health bioinformaticians, epidemiologists, laboratorians, administrative personnel, and associated partners and collaborators affiliated with AMD activities across the Midwest public health workforce region. Through a combination of educational presentations, group discussions, case studies, and interactive workshops, participants attend this event to learn about emerging AMD topics, become inspired with ideas to implement in their organizations, and connect with experts and colleagues across the Midwest region and beyond.
+### Event overview 
+**[2026 Overview Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/overview-agenda_26MASW.pdf)** \
+The Midwest AMD Symposium & Workshop is an annual, in-person event assembling AMD professionals, public health partners, and experts from across the Midwest region and beyond for two days of learning, collaboration, and practical skill building in the areas of genomic sequencing, bioinformatics, and genomic epidemiology.
 
-**Event Organizers** \
+This year's theme, "Charting the course: exploring the past, present, and future of AMD", will feature expert presentations, panels, tool demonstrations, and networking opportunieis. For the first time, we will be offering breakout sessions venturing into intermediate-level content in the various specialty areas of AMD. 
+
+### Registration
+Complete your [REGISTRATION](https://forms.cloud.microsoft/g/hLQg1vDcxU) by October 1, 2026.
+Registration will be prioritized for Midwest participants to ensure we meet the needs of our region. We warmly welcom colleagues from other regions to register as well; external participation will be confirmed as space allows. **Registration for non-Midwest participants will be confirmed via email no later than August 25, 2026**.
+
+### Event Organizers
 *Michigan Department of Health & Human Services*
 - Macy Pell, PhD - AMD Training Lead & Analyst
 - Madison Walton-Franklin, PhD - Genomic Epidemiology Training Lead & Analyst
