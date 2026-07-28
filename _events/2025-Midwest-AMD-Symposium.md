@@ -30,13 +30,9 @@ Complete the [presenter application](https://forms.cloud.microsoft/g/JQc9Xv0bps)
 - Arianna Miles-Jay, PhD, MPH - Genomic Analysis Unit Manager
 - Heather Blankenship, PhD - Genomics Technical Director
 
-
-
-
-***
-### Archive
+# Archive
 #### 2025 Midwest AMD Symposium
-**Overview**
+**Overview** \
 The 4th-annual Midwest AMD Symposium explored the inner workings of genomics workflows in public health with the theme of "pulling back the curtain". A total of 66 professionals participated in this event including 15 speakers from five State health departments and 51 trainees spanning 19 different organizations across the country.
 - [2025 Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Full-Agenda_2025-Midwest-AMD-Symposium.pdf)
 - [2025 Symposium Photos](https://github.com/StaPH-B/midwest-region/tree/main/images/2025_Midwest-AMD-Symposium)
