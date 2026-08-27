@@ -19,7 +19,7 @@ Registration will be prioritized for Midwest participants to ensure we meet the 
 
 #### EVENT ORGANIZERS
 *Michigan Department of Health & Human Services*
-- Macy Pell, PhD - AMD Training Lead & Analyst
+- Macy Sevic, PhD - AMD Training Lead & Analyst
 - Madison Walton-Franklin, PhD - Genomic Epidemiology Training Lead & Analyst
 - Arianna Miles-Jay, PhD, MPH - Genomic Analysis Unit Manager
 - Heather Blankenship, PhD - Genomics Technical Director
