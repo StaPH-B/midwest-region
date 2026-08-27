@@ -60,7 +60,7 @@ John Chodkowski is a Bioinformatics Specialist within the Genomics Analysis Unit
 
 #### Bioinformatics and Laboratory Training Lead
 
-##### Macy E. Pell, PhD (she/her)  
+##### Macy E. Sevic, PhD (she/her)  
 
 Macy is the AMD Training Lead and Analyst for the Genomics Section at the Michigan Department of Health and Human Services – Bureau of Laboratories. She obtained her PhD in Microbiology and Molecular Genetics from Michigan State University where she received extensive training in genomic sequencing, analysis, and interpretation of infectious diseases. As a seasoned science communicator, Macy focuses on curating and facilitating training resources and events for the public health workforce affiliated with advanced molecular detection efforts (i.e., sequencing, bioinformatics, and genomic epidemiology) in the Midwest region.
 
