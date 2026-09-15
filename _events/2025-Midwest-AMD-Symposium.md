@@ -14,8 +14,6 @@ This year's theme, "Charting the course: exploring the past, present, and future
 
 #### REGISTRATION
 Complete your [registration](https://forms.cloud.microsoft/g/hLQg1vDcxU) by October 1, 2026.
-Registration will be prioritized for Midwest participants to ensure we meet the needs of our region. We warmly welcom colleagues from other regions to register as well; external participation will be confirmed as space allows. **Registration for non-Midwest participants will be confirmed via email no later than August 25, 2026**.
-
 
 #### EVENT ORGANIZERS
 *Michigan Department of Health & Human Services*
