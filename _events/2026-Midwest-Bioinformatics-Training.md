@@ -58,7 +58,6 @@ event_number: 4
 ## Resources
 - Revisit the training modules and keep practicing -> [MDHHS-Bioinformatics-Training](https://github.com/MDHHS-Bioinformatics-Training) GitHub organization
 - [Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Final-Agenda_2026-Midwest-Bioinformatics-Training.pdf)
-- View and download [photos](https://github.com/StaPH-B/midwest-region/tree/main/images/2025_Midwest-AMD-Symposium) from the training
 
 ### Funding acknowledgement
 *This training event was made possible through funding provided under the Epidemiology and Laboratory Capacity (ELC) for Prevention and Control of Emerging Infectious Diseases Cooperative Agreement (CK24-0002), Project D: Advanced Molecular Detection to the Michigan Department of Health & Human Services. The conclusions, findings, and opinions expressed by presenters and organizers of this event do not necessarily reflect the official position of the U.S. Department of Health and Human Services, the Public Health Services, or the Centers for Disease Control and Prevention.*
