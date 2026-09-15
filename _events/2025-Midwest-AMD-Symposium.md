@@ -10,7 +10,7 @@ event_number: 1
 #### EVENT OVERVIEW 
 The Midwest AMD Symposium & Workshop is an annual, in-person event assembling AMD professionals, public health partners, and experts from across the Midwest region and beyond for two days of learning, collaboration, and practical skill building in the areas of genomic sequencing, bioinformatics, and genomic epidemiology. \
 This year's theme, "Charting the course: exploring the past, present, and future of AMD", will feature expert presentations, panels, tool demonstrations, and networking opportunieis. For the first time, we will be offering breakout sessions venturing into intermediate-level content in the various specialty areas of AMD. \
-**[2026 Overview Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/overview-agenda_26MASW.pdf)**
+**[2026 Overview Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Overview-Agenda_v2_Midwest-AMD-Symposium-Workshop-2026.pdf)**
 
 #### REGISTRATION
 Complete your [registration](https://forms.cloud.microsoft/g/hLQg1vDcxU) by October 1, 2026.
