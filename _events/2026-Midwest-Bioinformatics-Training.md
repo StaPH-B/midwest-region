@@ -21,6 +21,19 @@ event_number: 4
 - Douglas Maldonado-Torres, MS - Bioinformatician
 - Karla Vasco, DVM, MSc, PhD - Bioinformatics Specialist
 
+## Participant Testimonials
+*Don't take our word for it--see what our training participants have to say!*
+
+> "[The training] felt very designed for a beginner but wasn't oversimplified by any means. I gained more in the two days [of this training] than months of modules elsewhere."
+
+> "Incredible wealth of knowledge and a willingness to help foster a friendly learning environment."
+
+> "There were plenty of opportunities [for trainees] to be vulnerable and not really get it right away."
+
+> "The pace of the training was spot-on. Checking in on participants to make sure no one was falling behind was super helpful and checking to make sure everything was working for people was really reassuring."
+
+> "I enjoyed the detail and time each presenter put into presenting along with their effort to help bridge the gap between our understanding of the bioinformatics world."
+
 ## Training Content
 
 #### 1. Overview of bioinformatics in public health
