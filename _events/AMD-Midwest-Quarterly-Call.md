@@ -8,7 +8,7 @@ event_number: 3
 # AMD Quarterly Call (Midwest)
 Tuesday, December 8th | 2-3:30pm ET
 
-**Meeting Facilitator**: Macy Sevic - AMD Training Lead & Analyst, *Michigan Department of Health & Human Services*
+**Meeting Facilitator**: Madison Walton-Franklin - Genomic Epidemiology Training Lead & Analyst, *Michigan Department of Health & Human Services*
 
 ## Tentative Agenda
 1. GENERAL ANNOUNCEMENTS
