@@ -12,7 +12,7 @@ This year's theme, "Charting the course: exploring the past, present, and future
 
 #### Resources 
 - [Feedback survey](https://forms.cloud.microsoft/g/V2a1qnsSsv)
-- [Event photos]
+- [Event photos](https://github.com/StaPH-B/midwest-region/tree/main/images/Photos_2026_MASW)
 - [2026 Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/2026-MASW_Agenda.pdf)
 #### EVENT ORGANIZERS
 *Michigan Department of Health & Human Services*
