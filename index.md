@@ -77,8 +77,8 @@ Dr. Madison Walton-Franklin serves as the Genomic Epidemiology Training Lead wit
 ## Upcoming Events
 {:.mt-lg-0}
 
-### [Midwest AMD Symposium & Workshop]([https://staphb.org/midwest-region/events/2025-Midwest-AMD-Symposium.html](https://staphb.org/midwest-region/events/Midwest-AMD-Symposium.html)
-October 20-21, 2026 | Lansing, Michigan
+### [Midwest AMD Quarterly Call](https://staphb.org/midwest-region/events/AMD-Midwest-Quarterly-Call.html)
+December 8, 2026 | Virtual
 
 </div>
 </div>
