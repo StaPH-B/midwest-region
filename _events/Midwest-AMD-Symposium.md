@@ -13,7 +13,7 @@ This year's theme, "Charting the course: exploring the past, present, and future
 #### Resources 
 - [Feedback survey](https://forms.cloud.microsoft/g/V2a1qnsSsv)
 - [Event photos]
-- [2026 Agenda]
+- [2026 Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/2026-MASW_Agenda.pdf)
 #### EVENT ORGANIZERS
 *Michigan Department of Health & Human Services*
 - Macy Sevic, PhD - AMD Training Lead & Analyst
