@@ -6,24 +6,14 @@ event_number: 1
 ---
 # 2026 Midwest AMD Symposium & Workshop
 *Charting the course: exploring the past, present, and future of AMD* | *October 20-21, 2026* | *Lansing, MI*
-
-#### SESSION RESOURCES
-*Smooth sailing with Nextflow - Bioinformatics breakout* 
-- [GitHub repo](https://github.com/JLC2141/mdhhs_nextflow_training/tree/amd_sym)
-
-*All hands on deck: collaborative tabletop exercise* \
-Download these two Microreact files below:
-- [Clade I dashboard](https://github.com/StaPH-B/midwest-region/blob/main/images/tabletop_ca_clade_I_dashboard.microreact)
-- [Clade III dashboard](https://github.com/StaPH-B/midwest-region/blob/main/images/tabletop_ca_clade_III_dashboard.microreact)
-
-*Feedback & evaluation survey* 
-- Please provide your anonymous feedback at the end of the event via this [Microsoft Form](https://forms.cloud.microsoft/g/V2a1qnsSsv)
-
 #### EVENT OVERVIEW 
 The Midwest AMD Symposium & Workshop is an annual, in-person event assembling AMD professionals, public health partners, and experts from across the Midwest region and beyond for two days of learning, collaboration, and practical skill building in the areas of genomic sequencing, bioinformatics, and genomic epidemiology. \
-This year's theme, "Charting the course: exploring the past, present, and future of AMD", will feature expert presentations, panels, tool demonstrations, and networking opportunieis. For the first time, we will be offering breakout sessions venturing into intermediate-level content in the various specialty areas of AMD. \
-**[2026 Overview Agenda](https://github.com/StaPH-B/midwest-region/blob/main/images/Overview-Agenda_v2_Midwest-AMD-Symposium-Workshop-2026.pdf)**
+This year's theme, "Charting the course: exploring the past, present, and future of AMD", featured expert presentations, panels, tool demonstrations, and networking opportunities.
 
+#### Resources 
+- [Feedback survey](https://forms.cloud.microsoft/g/V2a1qnsSsv)
+- [Event photos]
+- [2026 Agenda]
 #### EVENT ORGANIZERS
 *Michigan Department of Health & Human Services*
 - Macy Sevic, PhD - AMD Training Lead & Analyst
